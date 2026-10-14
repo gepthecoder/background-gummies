@@ -1,0 +1,5543 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 10
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &519420028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519420032}
+  - component: {fileID: 519420031}
+  - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &519420029
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
+--- !u!20 &519420031
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 34
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 0
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &519420032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &619394800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 619394802}
+  - component: {fileID: 619394801}
+  m_Layer: 0
+  m_Name: Global Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &619394801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619394800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 4
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 0
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
+--- !u!4 &619394802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619394800}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &735561477
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 735561479}
+  - component: {fileID: 735561478}
+  m_Layer: 0
+  m_Name: Overlay Window
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &735561478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735561477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 988eb943726e9a449b21da3a637b4ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TransparentWindow
+  clickThrough: 1
+  alwaysOnTop: 1
+  noActivate: 1
+  maxFps: 60
+  idleFps: 30
+--- !u!4 &735561479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735561477}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &866409316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 866409340}
+  - component: {fileID: 866409339}
+  - component: {fileID: 866409338}
+  - component: {fileID: 866409337}
+  - component: {fileID: 866409336}
+  - component: {fileID: 866409335}
+  - component: {fileID: 866409334}
+  - component: {fileID: 866409333}
+  - component: {fileID: 866409332}
+  - component: {fileID: 866409331}
+  - component: {fileID: 866409330}
+  - component: {fileID: 866409329}
+  - component: {fileID: 866409328}
+  - component: {fileID: 866409327}
+  - component: {fileID: 866409326}
+  - component: {fileID: 866409325}
+  - component: {fileID: 866409324}
+  - component: {fileID: 866409323}
+  - component: {fileID: 866409322}
+  - component: {fileID: 866409321}
+  - component: {fileID: 866409320}
+  - component: {fileID: 866409319}
+  - component: {fileID: 866409318}
+  - component: {fileID: 866409317}
+  - component: {fileID: 866409341}
+  - component: {fileID: 866409344}
+  - component: {fileID: 866409343}
+  - component: {fileID: 866409342}
+  - component: {fileID: 866409345}
+  - component: {fileID: 866409346}
+  - component: {fileID: 866409347}
+  m_Layer: 0
+  m_Name: Gummy Dino
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &866409317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edd12ff31ac4174c87f648a9b4e24aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHideSeek
+  hideFor: 60
+  peekEvery: {x: 7, y: 14}
+  hoverToFind: 0.6
+  xpFound: 5
+  suggestChance: 0.06
+--- !u!114 &866409318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b29380f4401ac484493ae32285e82ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyDino
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  spikeColor: {r: 1, g: 0.72, b: 0.22, a: 1}
+  bellyColor: {r: 0.86, g: 0.95, b: 0.62, a: 1}
+  tailLength: 0.5
+  awayFor: 20
+  rawrEvery: 45
+  rawrChance: 0.45
+  rawrClip: {fileID: 8300000, guid: 1ee13127cbaf36f429d8af9a88c258a7, type: 3}
+  volume: 0.55
+--- !u!114 &866409319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51192ceed24c8e644a01ec945645efd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySocial
+  visitEvery: {x: 18, y: 40}
+  visitChance: 0.7
+  tagChance: 0.3
+  napTogether: 0.7
+  rivalry: 0.6
+  whisperDistance: 5
+  innocentDistance: 3
+--- !u!114 &866409320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664cb5c0f8bb0de469ae274e4e14c2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyEater
+  noticeDistance: 14
+  wakeDistance: 5
+  giveUpAfter: 12
+  crunchClip: {fileID: 8300000, guid: cf1bb94f38b140c45a2ac545d71f10f3, type: 3}
+  volume: 0.6
+--- !u!114 &866409321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a286da44c46fc344aa1b3c505f04482b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindowWobble
+  wobbleWindows: 1
+  landSpeed: 7
+  knockSpeed: 7
+  pushStrength: 0.5
+  knockStrength: 0.45
+  frequency: 5
+  damping: 0.18
+  maxOffset: 0.3
+  binBounce: 0.85
+  boingClip: {fileID: 8300000, guid: 521de2e62f3a82c4d8d2a481bb596771, type: 3}
+  volume: 0.5
+--- !u!114 &866409322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85324decb366f9e4eadc2ce76bab4658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHud
+  showAfterGain: 2.5
+  pixelScale1080: 3
+  textColor: {r: 1, g: 0.97, b: 0.9, a: 1}
+  xpColor: {r: 1, g: 0.82, b: 0.25, a: 1}
+  xpShine: {r: 1, g: 0.95, b: 0.65, a: 1}
+  barTrack: {r: 0.25, g: 0.18, b: 0.13, a: 0.95}
+  barOutline: {r: 0.12, g: 0.08, b: 0.06, a: 0.9}
+--- !u!114 &866409323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd1539a638f172f42931d4cd893e4791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyCostume
+--- !u!114 &866409324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d196c2bf49f70d14c91d42549ea528a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyParty
+  fromLevel: 3
+  tune: {fileID: 8300000, guid: 8ee36433439a2cd4291497516ab6630a, type: 3}
+  volume: 0.5
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+--- !u!114 &866409325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f73915345feabb542835ba6c34797186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyLaser
+  noticeRange: 10
+  pounceReach: 2.2
+  hurry: 1.7
+  xpCatch: 1
+  xpEvery: 10
+--- !u!114 &866409326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030f264e8626ecd4fb0d477bfee19e00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyLayer
+--- !u!114 &866409327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3395d132a1a2b2458207218d39c3ea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyDodge
+  fromLevel: 3
+  swoopSpeed: 6
+  maxInARow: 3
+--- !u!114 &866409328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf26dd4d333bde4981745bb7fe3c7e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyFetch
+  xpFetch: 4
+  giveUpAfter: 20
+--- !u!114 &866409329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6911ac55449af6c48a0df390448d661f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyBalloon
+  color: {r: 0.7, g: 0.45, b: 0.95, a: 1}
+  stringColor: {r: 0.95, g: 0.95, b: 0.97, a: 1}
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  popAfter: 0.05
+  inflateClip: {fileID: 8300000, guid: 0df77b375103ace4f83097b49f40253a, type: 3}
+  popClip: {fileID: 8300000, guid: a43da7a0f4d200d48b0c49b91e68a4b9, type: 3}
+  volume: 0.5
+--- !u!114 &866409330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49bff27d55a8f5f49b8152d2422d4067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyPlane
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  foldClip: {fileID: 8300000, guid: 1764c93397974f347b048e7ee01ef413, type: 3}
+  windLoop: {fileID: 8300000, guid: a84a79e6654a99640bc1dafa7d65fc96, type: 3}
+  volume: 0.4
+--- !u!114 &866409331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac587d93f090d3444b71bb8db49e024b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySkate
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  rollLoop: {fileID: 8300000, guid: 4989356ab83395d44a382e9005139ffe, type: 3}
+  clackClip: {fileID: 8300000, guid: 1965fb02269798b43a0c74b375cf0ed3, type: 3}
+  grindLoop: {fileID: 8300000, guid: 1335540ed08af1f43b8a8014955a42ad, type: 3}
+  volume: 0.45
+  sparkColor: {r: 1, g: 0.82, b: 0.35, a: 1}
+--- !u!114 &866409332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57b9808aef01494ba07d881a19ea158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyRope
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  color: {r: 0.55, g: 0.36, b: 0.2, a: 1}
+  width: 0.035
+  showCoil: 1
+  invitationTime: 1.2
+  lassoChance: 0.6
+  lassoCooldown: 30
+  maxRide: 40
+  shakeTurns: 3
+  shakeWindow: 0.8
+  shakeSpeed: 6
+  xpRide: 3
+  zipLoop: {fileID: 8300000, guid: 924e73158a2e08d40ac9b7aec43f0ccd, type: 3}
+  zipVolume: 0.4
+  zipThunk: {fileID: 8300000, guid: fa4469435901ee24aac2df55894ef837, type: 3}
+  zipSnap: {fileID: 8300000, guid: 652252108ce66b041a6a7beb60c8afc9, type: 3}
+--- !u!114 &866409333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd336f575db56741ac25f0644c75992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySkills
+  ladder:
+  - skill: 0
+    level: 1
+    name: HOP
+  - skill: 1
+    level: 2
+    name: HOP DOWN
+  - skill: 2
+    level: 3
+    name: HOP UP
+  - skill: 3
+    level: 4
+    name: CLIMB
+  - skill: 4
+    level: 5
+    name: THINK AHEAD
+  - skill: 5
+    level: 6
+    name: LEAP
+  - skill: 6
+    level: 7
+    name: WALL JUMP
+  - skill: 7
+    level: 8
+    name: ROUTES
+  - skill: 8
+    level: 9
+    name: CATCH
+  - skill: 9
+    level: 10
+    name: ACE
+  - skill: 10
+    level: 10
+    name: LASSO
+  - skill: 11
+    level: 12
+    name: SWING
+  - skill: 12
+    level: 13
+    name: SKATEBOARD
+  - skill: 13
+    level: 14
+    name: PAPER PLANE
+  - skill: 14
+    level: 15
+    name: GRIND
+  - skill: 15
+    level: 16
+    name: ZIPLINE
+  - skill: 16
+    level: 17
+    name: BALLOON
+  - skill: 17
+    level: 10
+    name: GADGET
+  levelOverride: 0
+  kit: 0
+  ladderVersion: 2
+--- !u!114 &866409334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da235b982768e424a8e3c63f8504fc8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyFx
+  splatClip: {fileID: 8300000, guid: 1981f65c406d5dc41a7536d258e28f92, type: 3}
+  bumpClip: {fileID: 8300000, guid: 5b1db27291fd188479cf630164a0c0f0, type: 3}
+  popClip: {fileID: 8300000, guid: 753600356d2c7f14e9044ed99feb1141, type: 3}
+  stretchLoop: {fileID: 8300000, guid: 65800f00bf782f544b1434cfae53bdcd, type: 3}
+  splatVolume: 0.7
+  bumpVolume: 0.35
+  grabVolume: 0.25
+  stretchVolume: 0.45
+  popVolume: 0.8
+  stereoWidth: 0.6
+  splatDroplets: 10
+  popDroplets: 14
+  spotFadeTime: 2.5
+  gooTint: {r: 0.85, g: 0.85, b: 0.85, a: 1}
+  trailFadeTime: 3
+  printFadeTime: 4
+--- !u!114 &866409335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00667e3a35028fb41ab2a426b7adda86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySpeech
+  voice: 4
+  talk: 1
+  chattiness: 0.85
+  minGap: 2.5
+  chatterEvery: {x: 50, y: 110}
+  pixelScale1080: 3
+  blipClip: {fileID: 8300000, guid: 19e540de29e7dac47aaf398bfa53182b, type: 3}
+  volume: 0.25
+--- !u!114 &866409336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1da3714357cf6345b58f3f66e7ae211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyBrain
+  climbChance: 0.3
+  peekChance: 0.3
+  edgeRange: 4
+  climbSpeed: 1.5
+  floatChance: 0.12
+  glideChance: 0.15
+  jetChance: 0.12
+  swingChance: 0.12
+  ropeClimbSpeed: 2.4
+  zipChance: 0.12
+  skateChance: 0.12
+  skateAccel: 9
+  skateBrake: 8
+  hopSpeed: 1.8
+  hopUp: 6.2
+  squashTime: 0.12
+  squashPose: {x: 1.15, y: 0.87}
+  launchPose: {x: 0.9, y: 1.11}
+  pauseBetweenHops: {x: 0.3, y: 0.6}
+  hopsPerWalk: {x: 2, y: 5}
+  idleTime: {x: 1.2, y: 3.8}
+  hopTowardsCursor: 0.6
+  stayOnWindow: 0.75
+  attentionDistance: 2
+  sleepAfter: 60
+  wakeDistance: 1.2
+  breathing: 0.03
+  zzzInterval: 1.3
+  zzzColor: {r: 0.36, g: 0.42, b: 0.75, a: 1}
+  dizzySpeed: 11
+  dizzyTime: 2.5
+  annoyedPokes: 3
+  annoyedWindow: 5
+  annoyedTime: 6
+  petSpeed: {x: 0.3, y: 5}
+  petTime: 0.8
+  happyTime: 3
+  heartColor: {r: 1, g: 0.42, b: 0.58, a: 1}
+  angerColor: {r: 0.9, g: 0.15, b: 0.15, a: 1}
+  leapHeight: 6
+  leapMargin: 0.9
+  leapReach: 3
+--- !u!114 &866409337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e3a81e078dd9549a7eda758a5b8ab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyProgress
+  stages:
+  - name: Hatchling
+    fromLevel: 1
+    shape: 5
+    size: 0.38
+    color: {r: 0.56, g: 0.86, b: 0.42, a: 1}
+    rim: {r: 0.24, g: 0.5, b: 0.18, a: 1}
+    topper: 2
+  - name: Little dino
+    fromLevel: 3
+    shape: 5
+    size: 0.46
+    color: {r: 0.45, g: 0.81, b: 0.35, a: 1}
+    rim: {r: 0.19, g: 0.46, b: 0.16, a: 1}
+    topper: 2
+  - name: Dino
+    fromLevel: 6
+    shape: 5
+    size: 0.54
+    color: {r: 0.36, g: 0.76, b: 0.3, a: 1}
+    rim: {r: 0.15, g: 0.42, b: 0.14, a: 1}
+    topper: 2
+  - name: Big dino
+    fromLevel: 10
+    shape: 5
+    size: 0.62
+    color: {r: 0.29, g: 0.69, b: 0.27, a: 1}
+    rim: {r: 0.12, g: 0.37, b: 0.12, a: 1}
+    topper: 2
+  xpGrab: 2
+  xpThrow: 3
+  xpSplat: 2
+  xpPop: 5
+  xpPetPerSecond: 2
+  xpWindowLanding: 1
+  xpWindowBonk: 2
+  xpSnack: 5
+  xpPerMinuteAwake: 1
+  baseXpPerLevel: 20
+  extraXpPerLevel: 15
+  preview: 0
+  previewGrowth: 0
+  levelUpClip: {fileID: 8300000, guid: c8d6aa803d7c60145bbad41e98bade53, type: 3}
+  stageUpClip: {fileID: 8300000, guid: cbd0616e61dfadc44a2d2f1eced1a77f, type: 3}
+  volume: 0.6
+  saveName: buddy_dino
+--- !u!114 &866409338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7afc3cd8eedf24c956158398993bbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CuteFace
+  scale: 0.6
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  sortingOrder: 46
+  eyeOffset: {x: 0.17, y: 0.12}
+  eyeSize: 0.27
+  pupilSize: 0.17
+  blushOffset: {x: 0.31, y: -0.02}
+  blushSize: {x: 0.14, y: 0.08}
+  mouthOffset: {x: 0, y: -0.03}
+  mouthWidth: 0.27
+  toothy: 1
+  pupilColor: {r: 0.1, g: 0.07, b: 0.04, a: 1}
+  blushColor: {r: 1, g: 0.55, b: 0.65, a: 0.55}
+  babyUntilLevel: 2
+  babyEyes: 0.32
+  blinkInterval: {x: 2, y: 5}
+  blinkTime: 0.14
+--- !u!114 &866409339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31cdcc956fc3a394383a415628816377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyBody
+  size: 0.6
+  shape: 5
+  topper: 2
+  color: {r: 0.36, g: 0.76, b: 0.3, a: 1}
+  rimColor: {r: 0.15, g: 0.42, b: 0.14, a: 1}
+  leafColor: {r: 0.26, g: 0.63, b: 0.28, a: 1}
+  stemColor: {r: 0.43, g: 0.3, b: 0.25, a: 1}
+  monsterSeed: 0
+  shader: {fileID: 4800000, guid: b4c93f2557dbf974188b55d6de41bdfa, type: 3}
+  spriteMaterial: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  sortingOrder: 45
+  shadowAlpha: 0.28
+  shadowOffset: {x: 0.03, y: -0.04}
+  gloss: 0.9
+  particles: 24
+  stiffness: 0.06
+  edgeStiffness: 0.1
+  areaStiffness: 1
+  iterations: 6
+  gravity: 30
+  damping: 0.003
+  friction: 0.6
+  restitution: 0.15
+  bumpSpeed: 1
+  usePlatforms: 1
+  uprightSpeed: 9
+  hoverSwell: 0.06
+  heldSwell: 0.1
+  sticky: 1
+  stickSpeed: 2
+  holdTime: 0.6
+  holdPerSpeed: 0.1
+  maxHold: 3
+  slideSpeed: 0.35
+  tearLoad: 0.02
+  maxStretch: 2
+  glancing: 2
+  solidWindows: 1
+  collideBuddies: 1
+  impactWobble: 0.02
+  wobbleFrequency: 4
+  wobbleDamping: 0.3
+  crawlGrip: 70
+  crawlGravity: 0.3
+  grabRadius: 0.35
+  grabStiffness: 0.5
+  maxTaffy: 1.1
+--- !u!4 &866409340
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &866409341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7874821c041bcb498e6482062dc24d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyStomp
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  reach: 3.5
+  reachUp: 5
+  cooldown: 6
+  funPerMinute: 0.25
+  stompClip: {fileID: 8300000, guid: 901a823ea854d0143b0503468b89be61, type: 3}
+  volume: 0.6
+--- !u!114 &866409342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a04853ad658c64b953d51904b8fe97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySlide
+  slideChance: 0.5
+--- !u!114 &866409343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa45eb002d0bc14eb02bee85bf2395a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyPit
+  cannonballChance: 0.4
+--- !u!114 &866409344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2de22092afc44907e880f62b2a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHoops
+  gameChance: 0.35
+--- !u!114 &866409345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70666ff9326bcaf43905f59dc2d65378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyRain
+  splashChance: 0.7
+  shakeClip: {fileID: 8300000, guid: 216ef4b82b8f2c14897ed57f1da4af53, type: 3}
+  volume: 0.5
+--- !u!114 &866409346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 121c9fdd17561fb4c913f264ad28f297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyFusion
+  pressTime: 0.55
+  fearDistance: 2.4
+  squishClip: {fileID: 8300000, guid: f295bbf94fd729e4db24afc7ece43e8c, type: 3}
+  fuseClip: {fileID: 8300000, guid: 43da83e965f55f54186b49e20e102d1e, type: 3}
+  splitClip: {fileID: 8300000, guid: 9c57a13528c3fee46b8500b7a1e6526e, type: 3}
+  roarClip: {fileID: 8300000, guid: 5f3169075f570564a96d7ca6aff5bc1a, type: 3}
+  stompClip: {fileID: 8300000, guid: 901a823ea854d0143b0503468b89be61, type: 3}
+  volume: 0.7
+--- !u!114 &866409347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866409316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10de3b5dd05034842bd7fecb0cb071d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyBand
+  marimba: {fileID: 8300000, guid: b68fbc8d9e29b2d48bf5e620e9f6270e, type: 3}
+  uke: {fileID: 8300000, guid: 793d2cfd3c3198a47944bfddf0dcb852, type: 3}
+  cup: {fileID: 8300000, guid: a3af8d8c02931f146aa05c5a8117059c, type: 3}
+  bongo: {fileID: 8300000, guid: dff8ec5e4bf469544b99a44223e80b73, type: 3}
+  bass: {fileID: 8300000, guid: b4c1e1ad4b008a440ade526226edabe6, type: 3}
+  quack: {fileID: 8300000, guid: b3c62dca99982f143837a75d9c5599c5, type: 3}
+  tuba: {fileID: 8300000, guid: e6a481f2b3899714cb35eb4cd6c410cf, type: 3}
+  maraca: {fileID: 8300000, guid: 49dcccf07e165cd4eb9d199e9d4d3bb9, type: 3}
+  kick: {fileID: 8300000, guid: bce8ef0211722714cab1480dd9dcbc7c, type: 3}
+  snare: {fileID: 8300000, guid: 2270d5e2981bcee44a8db4db13678eb8, type: 3}
+  hat: {fileID: 8300000, guid: 8c227d2df1d7ac540942a99961b1ac8c, type: 3}
+  windowNotes: 1
+  volume: 0.6
+  hopVolume: 0.13
+  stereoWidth: 0.6
+  jams: 1
+  jamVolume: 0.5
+  jamEveryMinutes: {x: 25, y: 50}
+  jamWhenIdle: 20
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+--- !u!1 &941781452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 941781475}
+  - component: {fileID: 941781474}
+  - component: {fileID: 941781473}
+  - component: {fileID: 941781472}
+  - component: {fileID: 941781471}
+  - component: {fileID: 941781470}
+  - component: {fileID: 941781469}
+  - component: {fileID: 941781468}
+  - component: {fileID: 941781467}
+  - component: {fileID: 941781466}
+  - component: {fileID: 941781465}
+  - component: {fileID: 941781464}
+  - component: {fileID: 941781463}
+  - component: {fileID: 941781462}
+  - component: {fileID: 941781461}
+  - component: {fileID: 941781460}
+  - component: {fileID: 941781459}
+  - component: {fileID: 941781458}
+  - component: {fileID: 941781457}
+  - component: {fileID: 941781456}
+  - component: {fileID: 941781455}
+  - component: {fileID: 941781454}
+  - component: {fileID: 941781453}
+  - component: {fileID: 941781476}
+  - component: {fileID: 941781477}
+  - component: {fileID: 941781480}
+  - component: {fileID: 941781479}
+  - component: {fileID: 941781478}
+  - component: {fileID: 941781481}
+  - component: {fileID: 941781482}
+  - component: {fileID: 941781483}
+  m_Layer: 0
+  m_Name: Gummy Burger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &941781453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edd12ff31ac4174c87f648a9b4e24aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHideSeek
+  hideFor: 60
+  peekEvery: {x: 7, y: 14}
+  hoverToFind: 0.6
+  xpFound: 5
+  suggestChance: 0.06
+--- !u!114 &941781454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab384c95315d222419c646d23811c10d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyBurger
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  doubleFromLevel: 10
+  bounciness: 1.15
+  boingClip: {fileID: 8300000, guid: 521de2e62f3a82c4d8d2a481bb596771, type: 3}
+  volume: 0.5
+--- !u!114 &941781455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51192ceed24c8e644a01ec945645efd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySocial
+  visitEvery: {x: 18, y: 40}
+  visitChance: 0.7
+  tagChance: 0.3
+  napTogether: 0.7
+  rivalry: 0.6
+  whisperDistance: 5
+  innocentDistance: 3
+--- !u!114 &941781456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664cb5c0f8bb0de469ae274e4e14c2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyEater
+  noticeDistance: 14
+  wakeDistance: 5
+  giveUpAfter: 12
+  crunchClip: {fileID: 8300000, guid: cf1bb94f38b140c45a2ac545d71f10f3, type: 3}
+  volume: 0.6
+--- !u!114 &941781457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a286da44c46fc344aa1b3c505f04482b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindowWobble
+  wobbleWindows: 1
+  landSpeed: 7
+  knockSpeed: 7
+  pushStrength: 0.5
+  knockStrength: 0.45
+  frequency: 5
+  damping: 0.18
+  maxOffset: 0.3
+  binBounce: 0.85
+  boingClip: {fileID: 8300000, guid: 521de2e62f3a82c4d8d2a481bb596771, type: 3}
+  volume: 0.5
+--- !u!114 &941781458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85324decb366f9e4eadc2ce76bab4658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHud
+  showAfterGain: 2.5
+  pixelScale1080: 3
+  textColor: {r: 1, g: 0.97, b: 0.9, a: 1}
+  xpColor: {r: 1, g: 0.82, b: 0.25, a: 1}
+  xpShine: {r: 1, g: 0.95, b: 0.65, a: 1}
+  barTrack: {r: 0.25, g: 0.18, b: 0.13, a: 0.95}
+  barOutline: {r: 0.12, g: 0.08, b: 0.06, a: 0.9}
+--- !u!114 &941781459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd1539a638f172f42931d4cd893e4791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyCostume
+--- !u!114 &941781460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d196c2bf49f70d14c91d42549ea528a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyParty
+  fromLevel: 3
+  tune: {fileID: 8300000, guid: 8ee36433439a2cd4291497516ab6630a, type: 3}
+  volume: 0.5
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+--- !u!114 &941781461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f73915345feabb542835ba6c34797186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyLaser
+  noticeRange: 10
+  pounceReach: 2.2
+  hurry: 1.7
+  xpCatch: 1
+  xpEvery: 10
+--- !u!114 &941781462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3395d132a1a2b2458207218d39c3ea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyDodge
+  fromLevel: 3
+  swoopSpeed: 6
+  maxInARow: 3
+--- !u!114 &941781463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf26dd4d333bde4981745bb7fe3c7e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyFetch
+  xpFetch: 4
+  giveUpAfter: 20
+--- !u!114 &941781464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6911ac55449af6c48a0df390448d661f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyBalloon
+  color: {r: 0.45, g: 0.82, b: 0.42, a: 1}
+  stringColor: {r: 0.95, g: 0.95, b: 0.97, a: 1}
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  popAfter: 0.05
+  inflateClip: {fileID: 8300000, guid: 0df77b375103ace4f83097b49f40253a, type: 3}
+  popClip: {fileID: 8300000, guid: a43da7a0f4d200d48b0c49b91e68a4b9, type: 3}
+  volume: 0.5
+--- !u!114 &941781465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49bff27d55a8f5f49b8152d2422d4067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyPlane
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  foldClip: {fileID: 8300000, guid: 1764c93397974f347b048e7ee01ef413, type: 3}
+  windLoop: {fileID: 8300000, guid: a84a79e6654a99640bc1dafa7d65fc96, type: 3}
+  volume: 0.4
+--- !u!114 &941781466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac587d93f090d3444b71bb8db49e024b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySkate
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  rollLoop: {fileID: 8300000, guid: 4989356ab83395d44a382e9005139ffe, type: 3}
+  clackClip: {fileID: 8300000, guid: 1965fb02269798b43a0c74b375cf0ed3, type: 3}
+  grindLoop: {fileID: 8300000, guid: 1335540ed08af1f43b8a8014955a42ad, type: 3}
+  volume: 0.45
+  sparkColor: {r: 1, g: 0.82, b: 0.35, a: 1}
+--- !u!114 &941781467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57b9808aef01494ba07d881a19ea158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyRope
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  color: {r: 0.96, g: 0.76, b: 0.18, a: 1}
+  width: 0.035
+  showCoil: 1
+  invitationTime: 1.2
+  lassoChance: 0.6
+  lassoCooldown: 30
+  maxRide: 40
+  shakeTurns: 3
+  shakeWindow: 0.8
+  shakeSpeed: 6
+  xpRide: 3
+  zipLoop: {fileID: 8300000, guid: 924e73158a2e08d40ac9b7aec43f0ccd, type: 3}
+  zipVolume: 0.4
+  zipThunk: {fileID: 8300000, guid: fa4469435901ee24aac2df55894ef837, type: 3}
+  zipSnap: {fileID: 8300000, guid: 652252108ce66b041a6a7beb60c8afc9, type: 3}
+--- !u!114 &941781468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd336f575db56741ac25f0644c75992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySkills
+  ladder:
+  - skill: 0
+    level: 1
+    name: HOP
+  - skill: 1
+    level: 2
+    name: HOP DOWN
+  - skill: 2
+    level: 3
+    name: HOP UP
+  - skill: 3
+    level: 4
+    name: CLIMB
+  - skill: 4
+    level: 5
+    name: THINK AHEAD
+  - skill: 5
+    level: 6
+    name: LEAP
+  - skill: 6
+    level: 7
+    name: WALL JUMP
+  - skill: 7
+    level: 8
+    name: ROUTES
+  - skill: 8
+    level: 9
+    name: CATCH
+  - skill: 9
+    level: 10
+    name: ACE
+  - skill: 10
+    level: 10
+    name: LASSO
+  - skill: 11
+    level: 12
+    name: SWING
+  - skill: 12
+    level: 13
+    name: SKATEBOARD
+  - skill: 13
+    level: 14
+    name: PAPER PLANE
+  - skill: 14
+    level: 15
+    name: GRIND
+  - skill: 15
+    level: 16
+    name: ZIPLINE
+  - skill: 16
+    level: 17
+    name: BALLOON
+  - skill: 17
+    level: 10
+    name: GADGET
+  levelOverride: 0
+  kit: 0
+  ladderVersion: 2
+--- !u!114 &941781469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da235b982768e424a8e3c63f8504fc8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyFx
+  splatClip: {fileID: 8300000, guid: 1981f65c406d5dc41a7536d258e28f92, type: 3}
+  bumpClip: {fileID: 8300000, guid: 5b1db27291fd188479cf630164a0c0f0, type: 3}
+  popClip: {fileID: 8300000, guid: 753600356d2c7f14e9044ed99feb1141, type: 3}
+  stretchLoop: {fileID: 8300000, guid: 65800f00bf782f544b1434cfae53bdcd, type: 3}
+  splatVolume: 0.7
+  bumpVolume: 0.35
+  grabVolume: 0.25
+  stretchVolume: 0.45
+  popVolume: 0.8
+  stereoWidth: 0.6
+  splatDroplets: 10
+  popDroplets: 14
+  spotFadeTime: 2.5
+  gooTint: {r: 0.85, g: 0.85, b: 0.85, a: 1}
+  trailFadeTime: 3
+  printFadeTime: 4
+--- !u!114 &941781470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00667e3a35028fb41ab2a426b7adda86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySpeech
+  voice: 3
+  talk: 1
+  chattiness: 0.7
+  minGap: 2.5
+  chatterEvery: {x: 50, y: 110}
+  pixelScale1080: 3
+  blipClip: {fileID: 8300000, guid: 19e540de29e7dac47aaf398bfa53182b, type: 3}
+  volume: 0.25
+--- !u!114 &941781471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1da3714357cf6345b58f3f66e7ae211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyBrain
+  climbChance: 0.15
+  peekChance: 0.15
+  edgeRange: 4
+  climbSpeed: 1.5
+  floatChance: 0.12
+  glideChance: 0.15
+  jetChance: 0.12
+  swingChance: 0.12
+  ropeClimbSpeed: 2.4
+  zipChance: 0.12
+  skateChance: 0.12
+  skateAccel: 9
+  skateBrake: 8
+  hopSpeed: 1.3
+  hopUp: 4.8
+  squashTime: 0.12
+  squashPose: {x: 1.15, y: 0.87}
+  launchPose: {x: 0.9, y: 1.11}
+  pauseBetweenHops: {x: 0.5, y: 0.9}
+  hopsPerWalk: {x: 2, y: 5}
+  idleTime: {x: 2.5, y: 6}
+  hopTowardsCursor: 0.35
+  stayOnWindow: 0.75
+  attentionDistance: 2
+  sleepAfter: 35
+  wakeDistance: 1.2
+  breathing: 0.03
+  zzzInterval: 1.3
+  zzzColor: {r: 0.36, g: 0.42, b: 0.75, a: 1}
+  dizzySpeed: 11
+  dizzyTime: 2.5
+  annoyedPokes: 3
+  annoyedWindow: 5
+  annoyedTime: 6
+  petSpeed: {x: 0.3, y: 5}
+  petTime: 0.8
+  happyTime: 3
+  heartColor: {r: 1, g: 0.42, b: 0.58, a: 1}
+  angerColor: {r: 0.9, g: 0.15, b: 0.15, a: 1}
+  leapHeight: 6
+  leapMargin: 0.9
+  leapReach: 3
+--- !u!114 &941781472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e3a81e078dd9549a7eda758a5b8ab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyProgress
+  stages:
+  - name: Slider
+    fromLevel: 1
+    shape: 4
+    size: 0.4
+    color: {r: 0.95, g: 0.7, b: 0.38, a: 1}
+    rim: {r: 0.62, g: 0.38, b: 0.16, a: 1}
+    topper: 2
+  - name: Burger
+    fromLevel: 3
+    shape: 4
+    size: 0.5
+    color: {r: 0.92, g: 0.64, b: 0.32, a: 1}
+    rim: {r: 0.6, g: 0.34, b: 0.13, a: 1}
+    topper: 2
+  - name: Big burger
+    fromLevel: 6
+    shape: 4
+    size: 0.58
+    color: {r: 0.9, g: 0.6, b: 0.28, a: 1}
+    rim: {r: 0.58, g: 0.32, b: 0.12, a: 1}
+    topper: 2
+  - name: Double burger
+    fromLevel: 10
+    shape: 4
+    size: 0.64
+    color: {r: 0.88, g: 0.57, b: 0.26, a: 1}
+    rim: {r: 0.55, g: 0.3, b: 0.11, a: 1}
+    topper: 2
+  xpGrab: 2
+  xpThrow: 3
+  xpSplat: 2
+  xpPop: 5
+  xpPetPerSecond: 2
+  xpWindowLanding: 1
+  xpWindowBonk: 2
+  xpSnack: 5
+  xpPerMinuteAwake: 1
+  baseXpPerLevel: 20
+  extraXpPerLevel: 15
+  preview: 0
+  previewGrowth: 0
+  levelUpClip: {fileID: 8300000, guid: c8d6aa803d7c60145bbad41e98bade53, type: 3}
+  stageUpClip: {fileID: 8300000, guid: cbd0616e61dfadc44a2d2f1eced1a77f, type: 3}
+  volume: 0.6
+  saveName: buddy_burger
+--- !u!114 &941781473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7afc3cd8eedf24c956158398993bbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CuteFace
+  scale: 0.6
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  sortingOrder: 36
+  eyeOffset: {x: 0.17, y: 0.17}
+  eyeSize: 0.22
+  pupilSize: 0.15
+  blushOffset: {x: 0.31, y: 0.07}
+  blushSize: {x: 0.14, y: 0.08}
+  mouthOffset: {x: 0, y: 0.06}
+  mouthWidth: 0.12
+  toothy: 0
+  pupilColor: {r: 0.12, g: 0.06, b: 0.03, a: 1}
+  blushColor: {r: 1, g: 0.55, b: 0.65, a: 0.55}
+  babyUntilLevel: 2
+  babyEyes: 0.32
+  blinkInterval: {x: 2, y: 5}
+  blinkTime: 0.14
+--- !u!114 &941781474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31cdcc956fc3a394383a415628816377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyBody
+  size: 0.6
+  shape: 4
+  topper: 2
+  color: {r: 0.9, g: 0.6, b: 0.28, a: 1}
+  rimColor: {r: 0.58, g: 0.32, b: 0.12, a: 1}
+  leafColor: {r: 0.26, g: 0.63, b: 0.28, a: 1}
+  stemColor: {r: 0.43, g: 0.3, b: 0.25, a: 1}
+  monsterSeed: 0
+  shader: {fileID: 4800000, guid: b4c93f2557dbf974188b55d6de41bdfa, type: 3}
+  spriteMaterial: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  sortingOrder: 35
+  shadowAlpha: 0.28
+  shadowOffset: {x: 0.03, y: -0.04}
+  gloss: 0.9
+  particles: 24
+  stiffness: 0.06
+  edgeStiffness: 0.1
+  areaStiffness: 1
+  iterations: 6
+  gravity: 30
+  damping: 0.003
+  friction: 0.6
+  restitution: 0.15
+  bumpSpeed: 1
+  usePlatforms: 1
+  uprightSpeed: 9
+  hoverSwell: 0.06
+  heldSwell: 0.1
+  sticky: 1
+  stickSpeed: 2
+  holdTime: 0.6
+  holdPerSpeed: 0.1
+  maxHold: 3
+  slideSpeed: 0.35
+  tearLoad: 0.02
+  maxStretch: 2
+  glancing: 2
+  solidWindows: 1
+  collideBuddies: 1
+  impactWobble: 0.02
+  wobbleFrequency: 4
+  wobbleDamping: 0.3
+  crawlGrip: 70
+  crawlGravity: 0.3
+  grabRadius: 0.35
+  grabStiffness: 0.5
+  maxTaffy: 1.1
+--- !u!4 &941781475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &941781476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030f264e8626ecd4fb0d477bfee19e00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyLayer
+--- !u!114 &941781477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688dfef807bc74b40a6e57e3b3786737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyPogo
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  boost: 2.8
+  tipChance: 0.2
+  funPerMinute: 0.3
+  boingClip: {fileID: 8300000, guid: 521de2e62f3a82c4d8d2a481bb596771, type: 3}
+  volume: 0.5
+--- !u!114 &941781478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a04853ad658c64b953d51904b8fe97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySlide
+  slideChance: 0.5
+--- !u!114 &941781479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa45eb002d0bc14eb02bee85bf2395a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyPit
+  cannonballChance: 0.4
+--- !u!114 &941781480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2de22092afc44907e880f62b2a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHoops
+  gameChance: 0.35
+--- !u!114 &941781481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70666ff9326bcaf43905f59dc2d65378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyRain
+  splashChance: 0.7
+  shakeClip: {fileID: 8300000, guid: 216ef4b82b8f2c14897ed57f1da4af53, type: 3}
+  volume: 0.5
+--- !u!114 &941781482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 121c9fdd17561fb4c913f264ad28f297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyFusion
+  pressTime: 0.55
+  fearDistance: 2.4
+  squishClip: {fileID: 8300000, guid: f295bbf94fd729e4db24afc7ece43e8c, type: 3}
+  fuseClip: {fileID: 8300000, guid: 43da83e965f55f54186b49e20e102d1e, type: 3}
+  splitClip: {fileID: 8300000, guid: 9c57a13528c3fee46b8500b7a1e6526e, type: 3}
+  roarClip: {fileID: 8300000, guid: 5f3169075f570564a96d7ca6aff5bc1a, type: 3}
+  stompClip: {fileID: 8300000, guid: 901a823ea854d0143b0503468b89be61, type: 3}
+  volume: 0.7
+--- !u!114 &941781483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941781452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10de3b5dd05034842bd7fecb0cb071d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyBand
+  marimba: {fileID: 8300000, guid: b68fbc8d9e29b2d48bf5e620e9f6270e, type: 3}
+  uke: {fileID: 8300000, guid: 793d2cfd3c3198a47944bfddf0dcb852, type: 3}
+  cup: {fileID: 8300000, guid: a3af8d8c02931f146aa05c5a8117059c, type: 3}
+  bongo: {fileID: 8300000, guid: dff8ec5e4bf469544b99a44223e80b73, type: 3}
+  bass: {fileID: 8300000, guid: b4c1e1ad4b008a440ade526226edabe6, type: 3}
+  quack: {fileID: 8300000, guid: b3c62dca99982f143837a75d9c5599c5, type: 3}
+  tuba: {fileID: 8300000, guid: e6a481f2b3899714cb35eb4cd6c410cf, type: 3}
+  maraca: {fileID: 8300000, guid: 49dcccf07e165cd4eb9d199e9d4d3bb9, type: 3}
+  kick: {fileID: 8300000, guid: bce8ef0211722714cab1480dd9dcbc7c, type: 3}
+  snare: {fileID: 8300000, guid: 2270d5e2981bcee44a8db4db13678eb8, type: 3}
+  hat: {fileID: 8300000, guid: 8c227d2df1d7ac540942a99961b1ac8c, type: 3}
+  windowNotes: 1
+  volume: 0.6
+  hopVolume: 0.13
+  stereoWidth: 0.6
+  jams: 1
+  jamVolume: 0.5
+  jamEveryMinutes: {x: 25, y: 50}
+  jamWhenIdle: 20
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+--- !u!1 &954272443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 954272446}
+  - component: {fileID: 954272445}
+  - component: {fileID: 954272444}
+  - component: {fileID: 954272447}
+  - component: {fileID: 954272448}
+  - component: {fileID: 954272449}
+  - component: {fileID: 954272450}
+  - component: {fileID: 954272451}
+  - component: {fileID: 954272453}
+  - component: {fileID: 954272452}
+  - component: {fileID: 954272454}
+  - component: {fileID: 954272458}
+  - component: {fileID: 954272457}
+  - component: {fileID: 954272456}
+  - component: {fileID: 954272455}
+  - component: {fileID: 954272461}
+  - component: {fileID: 954272460}
+  - component: {fileID: 954272459}
+  - component: {fileID: 954272462}
+  m_Layer: 0
+  m_Name: Interaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &954272444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9125c62d73661854ca4d701ff71fce6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScreenBounds
+  cam: {fileID: 519420031}
+  thickness: 2
+--- !u!114 &954272445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9772c52ecdb4b4d4cb3139fc7f83234a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Grabber
+  cam: {fileID: 519420031}
+--- !u!4 &954272446
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &954272447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39078c28b22e1e94ea88b5098cea9555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DesktopPlatforms
+  cam: {fileID: 519420031}
+  pollInterval: 0.033333335
+  minWindowWidth: 80
+  editorPlatforms:
+  - {x: 0.3, y: 0.6, z: 0.4}
+  editorWindowHeight: 0.2
+  useDesktopIcons: 1
+  editorIcons:
+  - {x: 0.04, y: 0.86, z: 0}
+  - {x: 0.04, y: 0.74, z: 0}
+  - {x: 0.04, y: 0.62, z: 1}
+  editorIconSize: 0.045
+--- !u!114 &954272448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152fa38a4ccbda3479f1677523508670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SnackDropper
+  dropOnCopy: 1
+  maxSnacks: 6
+  minInterval: 1.2
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  sortingOrder: 8
+  dropClip: {fileID: 8300000, guid: 07ef938c1a56aec419f11b6fed4cfc59, type: 3}
+  volume: 0.45
+--- !u!114 &954272449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd13bf2d1ee82564096f3b68bcecd01b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyChat
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  sortingOrder: 300
+  pixelScale1080: 3
+  maxChars: 60
+  closeAfterIdle: 30
+  xpPerMessage: 1
+--- !u!114 &954272450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63cc924b294f9aa46bc2cd8485abef19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorkClock
+  activeWithin: 60
+  breakAfter: 300
+  greetAfter: 6
+--- !u!114 &954272451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf5dd8032850d5b4a9b2740250596d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LaserPointer
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  color: {r: 1, g: 0.12, b: 0.1, a: 1}
+  size: 0.2
+  offAfter: 30
+  sortingOrder: 300
+--- !u!114 &954272452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc071ccc6d16ba4498ee8a58ba6d10a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Playground
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  pitSplash: {fileID: 8300000, guid: 3ff71b3ff0b53074eaa25f8040804a7f, type: 3}
+  slideLoop: {fileID: 8300000, guid: 2ebc35c8666c47a44a360f7ade732ccb, type: 3}
+  slideBoing: {fileID: 8300000, guid: fa11686c67732cc428230069ea3f78aa, type: 3}
+--- !u!114 &954272453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9424e36f25c2b1b4fab82bf9769d9958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CandyCloud
+  rate: 9
+  candyLife: 30
+  maxOnScreen: 160
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  candyOrder: 8
+  poofClip: {fileID: 8300000, guid: 25a81f5b97338bf49ad23643fd4a66b2, type: 3}
+  whooshClip: {fileID: 8300000, guid: 6b759287fa7ae324198848bf17e4a1c5, type: 3}
+  plinkClip: {fileID: 8300000, guid: 07ef938c1a56aec419f11b6fed4cfc59, type: 3}
+  volume: 0.5
+--- !u!114 &954272454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f5fa98726d3d24aa3d601fa5c1e8d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rain
+  duration: 120
+  dropsPerUnit: 11
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  rainLoop: {fileID: 8300000, guid: 007d2e5335770d04ab666d95c5703435, type: 3}
+  splashClip: {fileID: 8300000, guid: 374f6c153ff38d2469be0863147d809d, type: 3}
+  chimeClip: {fileID: 8300000, guid: d0614c3cd0ebd8b47afbe3cf2b3048fc, type: 3}
+  volume: 0.5
+--- !u!114 &954272455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828643f47e5d4d24f8d7bced09850813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bedtime
+  sleepyAt: 21
+  fortAt: 21.67
+  asleepBy: 22
+  wakeFrom: 6
+  wakeBy: 10
+  pomfClip: {fileID: 8300000, guid: f3fcedd97ca8211439717031344f77fd, type: 3}
+  blanketClip: {fileID: 8300000, guid: 68fbbc5207e7b46418201cc231e0966a, type: 3}
+  yawnClip: {fileID: 8300000, guid: 5edcd9bd50c43864793aca55580aa8ef, type: 3}
+  poofClip: {fileID: 8300000, guid: 25a81f5b97338bf49ad23643fd4a66b2, type: 3}
+  volume: 0.5
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+--- !u!114 &954272456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1833ba4cfee5c9c4abb63a69564d3dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Trophies
+  showFor: 25
+  pixelScale1080: 3
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  dingClip: {fileID: 8300000, guid: 28bc57efb577055489ce5cdeaa0a144f, type: 3}
+  shelfClip: {fileID: 8300000, guid: d861f2231e761f84593c6cf45aca3dab, type: 3}
+  poofClip: {fileID: 8300000, guid: 25a81f5b97338bf49ad23643fd4a66b2, type: 3}
+  volume: 0.6
+--- !u!114 &954272457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c7eb5f548653242b48cf87cf054376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GiantPotion
+  oneIn: 25
+  giantFor: 15
+  grow: 2.8
+  maxSize: 1.75
+  maxRiders: 3
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  gulpClip: {fileID: 8300000, guid: 9faa62d1f843c844f8617122f9476aca, type: 3}
+  growClip: {fileID: 8300000, guid: 0428a8e8a4cc8f441bb73d6fcde867f0, type: 3}
+  stompClip: {fileID: 8300000, guid: 901a823ea854d0143b0503468b89be61, type: 3}
+  popClip: {fileID: 8300000, guid: a7cd5fe6397d4804d9d6484a1bed5e8a, type: 3}
+  volume: 0.6
+--- !u!114 &954272458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3263352e62a6546a58fc3559a55c5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Lava
+  warning: 6
+  roundLength: 40
+  autoEvery: {x: 45, y: 80}
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  loopClip: {fileID: 8300000, guid: 262b9ab0ee0031c47aace13f0ef5b438, type: 3}
+  bloopClip: {fileID: 8300000, guid: 4d55aa88e404e504db5331b683ce5041, type: 3}
+  sizzleClip: {fileID: 8300000, guid: 2c0ef487338559343adad75116378d2b, type: 3}
+  alarmClip: {fileID: 8300000, guid: 6693cab36a6f4d24eb5290b14c99f9af, type: 3}
+  volume: 0.5
+--- !u!114 &954272459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d04f248b1dd15340a577939b90dfd6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindowInfestation
+  breachTime: 1.8
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  creakClip: {fileID: 8300000, guid: fc5388867e4463d4280e00de801ccc6d, type: 3}
+  breachClip: {fileID: 8300000, guid: 12d4a698f78466841af60b71b5fd7085, type: 3}
+  ejectClip: {fileID: 8300000, guid: 7201d5e3416efdf428de32bf607c1de0, type: 3}
+  clickClip: {fileID: 8300000, guid: 9b548b2edc02d6d4892b0c1c3ac89e35, type: 3}
+  volume: 0.6
+--- !u!114 &954272460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2459b9ffadf8748964891a12e632a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletTime
+  stopIn: 0.35
+  slowest: 0.1
+  holdSlow: 0.8
+  speedUpIn: 2.4
+  maxStopped: 300
+  afterimages: 1
+  tint: {r: 0.55, g: 0.7, b: 1, a: 0.2}
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  sortingOrder: 250
+  pixelScale1080: 3
+  stopClip: {fileID: 8300000, guid: 91c66989e9877de46a8c9c66fca63c0d, type: 3}
+  goClip: {fileID: 8300000, guid: 126d166f7c9483e4baf49f1f581d8a03, type: 3}
+  volume: 0.5
+--- !u!114 &954272461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3f5852dc87611b4e941b906eb4d4bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CaughtInTheAct
+  awayAfter: 120
+  cooldown: {x: 20, y: 40}
+  maxWild: 900
+  freezeFor: 1.1
+  innocentFor: 5
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  loopClip: {fileID: 8300000, guid: 168ff847efc14fc4bbec3b39944db2cd, type: 3}
+  scratchClip: {fileID: 8300000, guid: 08acaadd1d9b38e418a598e67a51e6e0, type: 3}
+  pomfClip: {fileID: 8300000, guid: f3fcedd97ca8211439717031344f77fd, type: 3}
+  boingClip: {fileID: 8300000, guid: 521de2e62f3a82c4d8d2a481bb596771, type: 3}
+  volume: 0.55
+  musicVolume: 0.3
+--- !u!114 &954272462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954272443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7de32f2e32450438b5f0ab37c7a7d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PinballTable
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  flipClip: {fileID: 0}
+  popClip: {fileID: 8300000, guid: 6baa0bcf2e44d0743ae62c6e34c64d4d, type: 3}
+  dingClip: {fileID: 0}
+  launchClip: {fileID: 8300000, guid: adee0162dae42624795c59a851f89089, type: 3}
+  gulpClip: {fileID: 0}
+  startClip: {fileID: 8300000, guid: 6e24cd3375b230e4c9c197922e8e61d4, type: 3}
+  overClip: {fileID: 8300000, guid: 6f84484d9fa8e4749a70638d09b53ddf, type: 3}
+  jackpotClip: {fileID: 0}
+  volume: 0.6
+  balls: 3
+  ballGravity: 14
+  maxSpeed: 22
+  ballSave: 5
+--- !u!1 &1055590708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1055590711}
+  - component: {fileID: 1055590710}
+  - component: {fileID: 1055590709}
+  - component: {fileID: 1055590712}
+  - component: {fileID: 1055590713}
+  - component: {fileID: 1055590715}
+  - component: {fileID: 1055590714}
+  - component: {fileID: 1055590717}
+  - component: {fileID: 1055590716}
+  - component: {fileID: 1055590720}
+  - component: {fileID: 1055590719}
+  - component: {fileID: 1055590718}
+  - component: {fileID: 1055590722}
+  - component: {fileID: 1055590721}
+  - component: {fileID: 1055590724}
+  - component: {fileID: 1055590723}
+  - component: {fileID: 1055590726}
+  - component: {fileID: 1055590725}
+  - component: {fileID: 1055590727}
+  - component: {fileID: 1055590732}
+  - component: {fileID: 1055590731}
+  - component: {fileID: 1055590730}
+  - component: {fileID: 1055590729}
+  - component: {fileID: 1055590728}
+  - component: {fileID: 1055590733}
+  - component: {fileID: 1055590736}
+  - component: {fileID: 1055590735}
+  - component: {fileID: 1055590734}
+  - component: {fileID: 1055590737}
+  - component: {fileID: 1055590738}
+  - component: {fileID: 1055590739}
+  m_Layer: 0
+  m_Name: Gummy Apple
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1055590709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7afc3cd8eedf24c956158398993bbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CuteFace
+  scale: 0.6
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  sortingOrder: 6
+  eyeOffset: {x: 0.16, y: -0.06}
+  eyeSize: 0.24
+  pupilSize: 0.15
+  blushOffset: {x: 0.3, y: -0.16}
+  blushSize: {x: 0.14, y: 0.08}
+  mouthOffset: {x: 0, y: -0.19}
+  mouthWidth: 0.12
+  toothy: 0
+  pupilColor: {r: 0.17, g: 0.11, b: 0.07, a: 1}
+  blushColor: {r: 1, g: 0.55, b: 0.65, a: 0.55}
+  babyUntilLevel: 2
+  babyEyes: 0.32
+  blinkInterval: {x: 2, y: 5}
+  blinkTime: 0.14
+--- !u!114 &1055590710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31cdcc956fc3a394383a415628816377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyBody
+  size: 0.6
+  shape: 0
+  topper: 0
+  color: {r: 0.9, g: 0.22, b: 0.21, a: 1}
+  rimColor: {r: 0.45, g: 0.08, b: 0.08, a: 1}
+  leafColor: {r: 0.26, g: 0.63, b: 0.28, a: 1}
+  stemColor: {r: 0.43, g: 0.3, b: 0.25, a: 1}
+  monsterSeed: 0
+  shader: {fileID: 4800000, guid: b4c93f2557dbf974188b55d6de41bdfa, type: 3}
+  spriteMaterial: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  sortingOrder: 5
+  shadowAlpha: 0.28
+  shadowOffset: {x: 0.03, y: -0.04}
+  gloss: 0.9
+  particles: 24
+  stiffness: 0.06
+  edgeStiffness: 0.1
+  areaStiffness: 1
+  iterations: 6
+  gravity: 30
+  damping: 0.003
+  friction: 0.6
+  restitution: 0.15
+  bumpSpeed: 1
+  usePlatforms: 1
+  uprightSpeed: 3
+  hoverSwell: 0.06
+  heldSwell: 0.1
+  sticky: 1
+  stickSpeed: 2
+  holdTime: 1
+  holdPerSpeed: 0.1
+  maxHold: 4
+  slideSpeed: 0.35
+  tearLoad: 0.02
+  maxStretch: 2
+  glancing: 2
+  solidWindows: 1
+  collideBuddies: 1
+  impactWobble: 0.02
+  wobbleFrequency: 4
+  wobbleDamping: 0.3
+  crawlGrip: 70
+  crawlGravity: 0.3
+  grabRadius: 0.35
+  grabStiffness: 0.5
+  maxTaffy: 1.1
+--- !u!4 &1055590711
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1055590712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da235b982768e424a8e3c63f8504fc8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyFx
+  splatClip: {fileID: 8300000, guid: 1981f65c406d5dc41a7536d258e28f92, type: 3}
+  bumpClip: {fileID: 8300000, guid: 5b1db27291fd188479cf630164a0c0f0, type: 3}
+  popClip: {fileID: 8300000, guid: 753600356d2c7f14e9044ed99feb1141, type: 3}
+  stretchLoop: {fileID: 8300000, guid: 65800f00bf782f544b1434cfae53bdcd, type: 3}
+  splatVolume: 0.7
+  bumpVolume: 0.35
+  grabVolume: 0.25
+  stretchVolume: 0.45
+  popVolume: 0.8
+  stereoWidth: 0.6
+  splatDroplets: 10
+  popDroplets: 14
+  spotFadeTime: 2.5
+  gooTint: {r: 0.85, g: 0.85, b: 0.85, a: 1}
+  trailFadeTime: 3
+  printFadeTime: 4
+--- !u!114 &1055590713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1da3714357cf6345b58f3f66e7ae211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyBrain
+  climbChance: 0.25
+  peekChance: 0.15
+  edgeRange: 4
+  climbSpeed: 1.5
+  floatChance: 0.12
+  glideChance: 0.15
+  jetChance: 0.12
+  swingChance: 0.12
+  ropeClimbSpeed: 2.4
+  zipChance: 0.12
+  skateChance: 0.12
+  skateAccel: 9
+  skateBrake: 8
+  hopSpeed: 1.6
+  hopUp: 5.5
+  squashTime: 0.12
+  squashPose: {x: 1.15, y: 0.87}
+  launchPose: {x: 0.9, y: 1.11}
+  pauseBetweenHops: {x: 0.35, y: 0.7}
+  hopsPerWalk: {x: 2, y: 5}
+  idleTime: {x: 2, y: 6}
+  hopTowardsCursor: 0.4
+  stayOnWindow: 0.75
+  attentionDistance: 2
+  sleepAfter: 40
+  wakeDistance: 1.2
+  breathing: 0.03
+  zzzInterval: 1.3
+  zzzColor: {r: 0.36, g: 0.42, b: 0.75, a: 1}
+  dizzySpeed: 11
+  dizzyTime: 2.5
+  annoyedPokes: 3
+  annoyedWindow: 5
+  annoyedTime: 6
+  petSpeed: {x: 0.3, y: 5}
+  petTime: 0.8
+  happyTime: 3
+  heartColor: {r: 1, g: 0.42, b: 0.58, a: 1}
+  angerColor: {r: 0.9, g: 0.15, b: 0.15, a: 1}
+  leapHeight: 6
+  leapMargin: 0.9
+  leapReach: 3
+--- !u!114 &1055590714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85324decb366f9e4eadc2ce76bab4658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHud
+  showAfterGain: 2.5
+  pixelScale1080: 3
+  textColor: {r: 1, g: 0.97, b: 0.9, a: 1}
+  xpColor: {r: 1, g: 0.82, b: 0.25, a: 1}
+  xpShine: {r: 1, g: 0.95, b: 0.65, a: 1}
+  barTrack: {r: 0.25, g: 0.18, b: 0.13, a: 0.95}
+  barOutline: {r: 0.12, g: 0.08, b: 0.06, a: 0.9}
+--- !u!114 &1055590715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e3a81e078dd9549a7eda758a5b8ab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyProgress
+  stages:
+  - name: Seed
+    fromLevel: 1
+    shape: 1
+    size: 0.34
+    color: {r: 0.6, g: 0.4, b: 0.24, a: 1}
+    rim: {r: 0.3, g: 0.18, b: 0.1, a: 1}
+    topper: 2
+  - name: Sprout
+    fromLevel: 3
+    shape: 1
+    size: 0.4
+    color: {r: 0.6, g: 0.4, b: 0.24, a: 1}
+    rim: {r: 0.3, g: 0.18, b: 0.1, a: 1}
+    topper: 1
+  - name: Young apple
+    fromLevel: 6
+    shape: 0
+    size: 0.48
+    color: {r: 0.56, g: 0.78, b: 0.26, a: 1}
+    rim: {r: 0.25, g: 0.42, b: 0.1, a: 1}
+    topper: 0
+  - name: Apple
+    fromLevel: 10
+    shape: 0
+    size: 0.6
+    color: {r: 0.9, g: 0.22, b: 0.21, a: 1}
+    rim: {r: 0.45, g: 0.08, b: 0.08, a: 1}
+    topper: 0
+  xpGrab: 2
+  xpThrow: 3
+  xpSplat: 2
+  xpPop: 5
+  xpPetPerSecond: 2
+  xpWindowLanding: 1
+  xpWindowBonk: 2
+  xpSnack: 5
+  xpPerMinuteAwake: 1
+  baseXpPerLevel: 20
+  extraXpPerLevel: 15
+  preview: 0
+  previewGrowth: 0
+  levelUpClip: {fileID: 8300000, guid: c8d6aa803d7c60145bbad41e98bade53, type: 3}
+  stageUpClip: {fileID: 8300000, guid: cbd0616e61dfadc44a2d2f1eced1a77f, type: 3}
+  volume: 0.6
+  saveName: buddy_apple
+--- !u!114 &1055590716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664cb5c0f8bb0de469ae274e4e14c2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyEater
+  noticeDistance: 14
+  wakeDistance: 5
+  giveUpAfter: 12
+  crunchClip: {fileID: 8300000, guid: cf1bb94f38b140c45a2ac545d71f10f3, type: 3}
+  volume: 0.6
+--- !u!114 &1055590717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a286da44c46fc344aa1b3c505f04482b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindowWobble
+  wobbleWindows: 1
+  landSpeed: 6
+  knockSpeed: 7
+  pushStrength: 0.5
+  knockStrength: 0.45
+  frequency: 5
+  damping: 0.18
+  maxOffset: 0.3
+  binBounce: 0.85
+  boingClip: {fileID: 8300000, guid: 521de2e62f3a82c4d8d2a481bb596771, type: 3}
+  volume: 0.5
+--- !u!114 &1055590718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b6b4633a3f78847ab37f71a16fd144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyFriends
+  tomato: {fileID: 1111721172}
+  unlockLevel: 5
+  bean: {fileID: 2119365889}
+  beanLevel: 10
+  burger: {fileID: 941781474}
+  burgerLevel: 15
+  dino: {fileID: 866409339}
+  dinoLevel: 20
+  duck: {fileID: 1465240029}
+  duckLevel: 25
+  plantClip: {fileID: 8300000, guid: 07ef938c1a56aec419f11b6fed4cfc59, type: 3}
+  poofClip: {fileID: 8300000, guid: 753600356d2c7f14e9044ed99feb1141, type: 3}
+  volume: 0.6
+--- !u!114 &1055590719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51192ceed24c8e644a01ec945645efd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySocial
+  visitEvery: {x: 18, y: 40}
+  visitChance: 0.7
+  tagChance: 0.3
+  napTogether: 0.7
+  rivalry: 0.6
+  whisperDistance: 5
+  innocentDistance: 3
+--- !u!114 &1055590720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00667e3a35028fb41ab2a426b7adda86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySpeech
+  voice: 0
+  talk: 1
+  chattiness: 0.7
+  minGap: 2.5
+  chatterEvery: {x: 50, y: 110}
+  pixelScale1080: 3
+  blipClip: {fileID: 8300000, guid: 19e540de29e7dac47aaf398bfa53182b, type: 3}
+  volume: 0.25
+--- !u!114 &1055590721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6bfc74a864a6454093a973b42e36165, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyWhip
+  whip: {fileID: 1207220444}
+  unlockLevel: 10
+  whipSize: 0.32
+  idleCrackAfter: 30
+  flourishEvery: 50
+  snackReach: 1.6
+  volume: 0.8
+--- !u!114 &1055590722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edd12ff31ac4174c87f648a9b4e24aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHideSeek
+  hideFor: 60
+  peekEvery: {x: 7, y: 14}
+  hoverToFind: 0.6
+  xpFound: 5
+  suggestChance: 0.06
+--- !u!114 &1055590723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57b9808aef01494ba07d881a19ea158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyRope
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  color: {r: 0.8, g: 0.13, b: 0.18, a: 1}
+  width: 0.035
+  showCoil: 1
+  invitationTime: 1.2
+  lassoChance: 0.6
+  lassoCooldown: 30
+  maxRide: 40
+  shakeTurns: 3
+  shakeWindow: 0.8
+  shakeSpeed: 6
+  xpRide: 3
+  zipLoop: {fileID: 8300000, guid: 924e73158a2e08d40ac9b7aec43f0ccd, type: 3}
+  zipVolume: 0.4
+  zipThunk: {fileID: 8300000, guid: fa4469435901ee24aac2df55894ef837, type: 3}
+  zipSnap: {fileID: 8300000, guid: 652252108ce66b041a6a7beb60c8afc9, type: 3}
+--- !u!114 &1055590724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd336f575db56741ac25f0644c75992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySkills
+  ladder:
+  - skill: 0
+    level: 1
+    name: HOP
+  - skill: 1
+    level: 2
+    name: HOP DOWN
+  - skill: 2
+    level: 3
+    name: HOP UP
+  - skill: 3
+    level: 4
+    name: CLIMB
+  - skill: 4
+    level: 5
+    name: THINK AHEAD
+  - skill: 5
+    level: 6
+    name: LEAP
+  - skill: 6
+    level: 7
+    name: WALL JUMP
+  - skill: 7
+    level: 8
+    name: ROUTES
+  - skill: 8
+    level: 9
+    name: CATCH
+  - skill: 9
+    level: 10
+    name: ACE
+  - skill: 10
+    level: 10
+    name: LASSO
+  - skill: 11
+    level: 12
+    name: SWING
+  - skill: 12
+    level: 13
+    name: SKATEBOARD
+  - skill: 13
+    level: 14
+    name: PAPER PLANE
+  - skill: 14
+    level: 15
+    name: GRIND
+  - skill: 15
+    level: 16
+    name: ZIPLINE
+  - skill: 16
+    level: 17
+    name: BALLOON
+  - skill: 17
+    level: 10
+    name: GADGET
+  levelOverride: 0
+  kit: 0
+  ladderVersion: 2
+--- !u!114 &1055590725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd1539a638f172f42931d4cd893e4791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyCostume
+--- !u!114 &1055590726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac587d93f090d3444b71bb8db49e024b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySkate
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  rollLoop: {fileID: 8300000, guid: 4989356ab83395d44a382e9005139ffe, type: 3}
+  clackClip: {fileID: 8300000, guid: 1965fb02269798b43a0c74b375cf0ed3, type: 3}
+  grindLoop: {fileID: 8300000, guid: 1335540ed08af1f43b8a8014955a42ad, type: 3}
+  volume: 0.45
+  sparkColor: {r: 1, g: 0.82, b: 0.35, a: 1}
+--- !u!114 &1055590727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49bff27d55a8f5f49b8152d2422d4067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyPlane
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  foldClip: {fileID: 8300000, guid: 1764c93397974f347b048e7ee01ef413, type: 3}
+  windLoop: {fileID: 8300000, guid: a84a79e6654a99640bc1dafa7d65fc96, type: 3}
+  volume: 0.4
+--- !u!114 &1055590728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d196c2bf49f70d14c91d42549ea528a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyParty
+  fromLevel: 3
+  tune: {fileID: 8300000, guid: 8ee36433439a2cd4291497516ab6630a, type: 3}
+  volume: 0.5
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+--- !u!114 &1055590729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f73915345feabb542835ba6c34797186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyLaser
+  noticeRange: 10
+  pounceReach: 2.2
+  hurry: 1.7
+  xpCatch: 1
+  xpEvery: 10
+--- !u!114 &1055590730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3395d132a1a2b2458207218d39c3ea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyDodge
+  fromLevel: 3
+  swoopSpeed: 6
+  maxInARow: 3
+--- !u!114 &1055590731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf26dd4d333bde4981745bb7fe3c7e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyFetch
+  xpFetch: 4
+  giveUpAfter: 20
+--- !u!114 &1055590732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6911ac55449af6c48a0df390448d661f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyBalloon
+  color: {r: 0.3, g: 0.62, b: 0.95, a: 1}
+  stringColor: {r: 0.95, g: 0.95, b: 0.97, a: 1}
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  popAfter: 0.05
+  inflateClip: {fileID: 8300000, guid: 0df77b375103ace4f83097b49f40253a, type: 3}
+  popClip: {fileID: 8300000, guid: a43da7a0f4d200d48b0c49b91e68a4b9, type: 3}
+  volume: 0.5
+--- !u!114 &1055590733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030f264e8626ecd4fb0d477bfee19e00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyLayer
+--- !u!114 &1055590734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a04853ad658c64b953d51904b8fe97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySlide
+  slideChance: 0.5
+--- !u!114 &1055590735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa45eb002d0bc14eb02bee85bf2395a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyPit
+  cannonballChance: 0.4
+--- !u!114 &1055590736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2de22092afc44907e880f62b2a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHoops
+  gameChance: 0.35
+--- !u!114 &1055590737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70666ff9326bcaf43905f59dc2d65378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyRain
+  splashChance: 0.7
+  shakeClip: {fileID: 8300000, guid: 216ef4b82b8f2c14897ed57f1da4af53, type: 3}
+  volume: 0.5
+--- !u!114 &1055590738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 121c9fdd17561fb4c913f264ad28f297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyFusion
+  pressTime: 0.55
+  fearDistance: 2.4
+  squishClip: {fileID: 8300000, guid: f295bbf94fd729e4db24afc7ece43e8c, type: 3}
+  fuseClip: {fileID: 8300000, guid: 43da83e965f55f54186b49e20e102d1e, type: 3}
+  splitClip: {fileID: 8300000, guid: 9c57a13528c3fee46b8500b7a1e6526e, type: 3}
+  roarClip: {fileID: 8300000, guid: 5f3169075f570564a96d7ca6aff5bc1a, type: 3}
+  stompClip: {fileID: 8300000, guid: 901a823ea854d0143b0503468b89be61, type: 3}
+  volume: 0.7
+--- !u!114 &1055590739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055590708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10de3b5dd05034842bd7fecb0cb071d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyBand
+  marimba: {fileID: 8300000, guid: b68fbc8d9e29b2d48bf5e620e9f6270e, type: 3}
+  uke: {fileID: 8300000, guid: 793d2cfd3c3198a47944bfddf0dcb852, type: 3}
+  cup: {fileID: 8300000, guid: a3af8d8c02931f146aa05c5a8117059c, type: 3}
+  bongo: {fileID: 8300000, guid: dff8ec5e4bf469544b99a44223e80b73, type: 3}
+  bass: {fileID: 8300000, guid: b4c1e1ad4b008a440ade526226edabe6, type: 3}
+  quack: {fileID: 8300000, guid: b3c62dca99982f143837a75d9c5599c5, type: 3}
+  tuba: {fileID: 8300000, guid: e6a481f2b3899714cb35eb4cd6c410cf, type: 3}
+  maraca: {fileID: 8300000, guid: 49dcccf07e165cd4eb9d199e9d4d3bb9, type: 3}
+  kick: {fileID: 8300000, guid: bce8ef0211722714cab1480dd9dcbc7c, type: 3}
+  snare: {fileID: 8300000, guid: 2270d5e2981bcee44a8db4db13678eb8, type: 3}
+  hat: {fileID: 8300000, guid: 8c227d2df1d7ac540942a99961b1ac8c, type: 3}
+  windowNotes: 1
+  volume: 0.6
+  hopVolume: 0.13
+  stereoWidth: 0.6
+  jams: 1
+  jamVolume: 0.5
+  jamEveryMinutes: {x: 25, y: 50}
+  jamWhenIdle: 20
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+--- !u!1 &1111721162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1111721173}
+  - component: {fileID: 1111721172}
+  - component: {fileID: 1111721171}
+  - component: {fileID: 1111721170}
+  - component: {fileID: 1111721169}
+  - component: {fileID: 1111721168}
+  - component: {fileID: 1111721167}
+  - component: {fileID: 1111721166}
+  - component: {fileID: 1111721165}
+  - component: {fileID: 1111721164}
+  - component: {fileID: 1111721163}
+  - component: {fileID: 1111721174}
+  - component: {fileID: 1111721176}
+  - component: {fileID: 1111721175}
+  - component: {fileID: 1111721178}
+  - component: {fileID: 1111721177}
+  - component: {fileID: 1111721179}
+  - component: {fileID: 1111721184}
+  - component: {fileID: 1111721183}
+  - component: {fileID: 1111721182}
+  - component: {fileID: 1111721181}
+  - component: {fileID: 1111721180}
+  - component: {fileID: 1111721185}
+  - component: {fileID: 1111721186}
+  - component: {fileID: 1111721189}
+  - component: {fileID: 1111721188}
+  - component: {fileID: 1111721187}
+  - component: {fileID: 1111721190}
+  - component: {fileID: 1111721191}
+  - component: {fileID: 1111721192}
+  m_Layer: 0
+  m_Name: Gummy Tomato
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1111721163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51192ceed24c8e644a01ec945645efd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySocial
+  visitEvery: {x: 18, y: 40}
+  visitChance: 0.7
+  tagChance: 0.3
+  napTogether: 0.7
+  rivalry: 0.6
+  whisperDistance: 5
+  innocentDistance: 3
+--- !u!114 &1111721164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664cb5c0f8bb0de469ae274e4e14c2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyEater
+  noticeDistance: 14
+  wakeDistance: 5
+  giveUpAfter: 12
+  crunchClip: {fileID: 8300000, guid: cf1bb94f38b140c45a2ac545d71f10f3, type: 3}
+  volume: 0.6
+--- !u!114 &1111721165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a286da44c46fc344aa1b3c505f04482b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindowWobble
+  wobbleWindows: 1
+  landSpeed: 7
+  knockSpeed: 7
+  pushStrength: 0.5
+  knockStrength: 0.45
+  frequency: 5
+  damping: 0.18
+  maxOffset: 0.3
+  binBounce: 0.85
+  boingClip: {fileID: 8300000, guid: 521de2e62f3a82c4d8d2a481bb596771, type: 3}
+  volume: 0.5
+--- !u!114 &1111721166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85324decb366f9e4eadc2ce76bab4658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHud
+  showAfterGain: 2.5
+  pixelScale1080: 3
+  textColor: {r: 1, g: 0.97, b: 0.9, a: 1}
+  xpColor: {r: 1, g: 0.82, b: 0.25, a: 1}
+  xpShine: {r: 1, g: 0.95, b: 0.65, a: 1}
+  barTrack: {r: 0.25, g: 0.18, b: 0.13, a: 0.95}
+  barOutline: {r: 0.12, g: 0.08, b: 0.06, a: 0.9}
+--- !u!114 &1111721167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da235b982768e424a8e3c63f8504fc8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyFx
+  splatClip: {fileID: 8300000, guid: 1981f65c406d5dc41a7536d258e28f92, type: 3}
+  bumpClip: {fileID: 8300000, guid: 5b1db27291fd188479cf630164a0c0f0, type: 3}
+  popClip: {fileID: 8300000, guid: 753600356d2c7f14e9044ed99feb1141, type: 3}
+  stretchLoop: {fileID: 8300000, guid: 65800f00bf782f544b1434cfae53bdcd, type: 3}
+  splatVolume: 0.7
+  bumpVolume: 0.35
+  grabVolume: 0.25
+  stretchVolume: 0.45
+  popVolume: 0.8
+  stereoWidth: 0.6
+  splatDroplets: 10
+  popDroplets: 14
+  spotFadeTime: 2.5
+  gooTint: {r: 0.85, g: 0.85, b: 0.85, a: 1}
+  trailFadeTime: 3
+  printFadeTime: 4
+--- !u!114 &1111721168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00667e3a35028fb41ab2a426b7adda86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySpeech
+  voice: 1
+  talk: 1
+  chattiness: 0.85
+  minGap: 2.5
+  chatterEvery: {x: 50, y: 110}
+  pixelScale1080: 3
+  blipClip: {fileID: 8300000, guid: 19e540de29e7dac47aaf398bfa53182b, type: 3}
+  volume: 0.25
+--- !u!114 &1111721169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1da3714357cf6345b58f3f66e7ae211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyBrain
+  climbChance: 0.35
+  peekChance: 0.2
+  edgeRange: 4
+  climbSpeed: 1.5
+  floatChance: 0.12
+  glideChance: 0.15
+  jetChance: 0.12
+  swingChance: 0.12
+  ropeClimbSpeed: 2.4
+  zipChance: 0.12
+  skateChance: 0.12
+  skateAccel: 9
+  skateBrake: 8
+  hopSpeed: 1.9
+  hopUp: 6
+  squashTime: 0.12
+  squashPose: {x: 1.15, y: 0.87}
+  launchPose: {x: 0.9, y: 1.11}
+  pauseBetweenHops: {x: 0.35, y: 0.7}
+  hopsPerWalk: {x: 2, y: 5}
+  idleTime: {x: 1.5, y: 4.5}
+  hopTowardsCursor: 0.5
+  stayOnWindow: 0.75
+  attentionDistance: 2
+  sleepAfter: 50
+  wakeDistance: 1.2
+  breathing: 0.03
+  zzzInterval: 1.3
+  zzzColor: {r: 0.36, g: 0.42, b: 0.75, a: 1}
+  dizzySpeed: 11
+  dizzyTime: 2.5
+  annoyedPokes: 3
+  annoyedWindow: 5
+  annoyedTime: 6
+  petSpeed: {x: 0.3, y: 5}
+  petTime: 0.8
+  happyTime: 3
+  heartColor: {r: 1, g: 0.42, b: 0.58, a: 1}
+  angerColor: {r: 0.9, g: 0.15, b: 0.15, a: 1}
+  leapHeight: 6
+  leapMargin: 0.9
+  leapReach: 3
+--- !u!114 &1111721170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e3a81e078dd9549a7eda758a5b8ab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyProgress
+  stages:
+  - name: Little tomato
+    fromLevel: 1
+    shape: 2
+    size: 0.36
+    color: {r: 0.8, g: 0.88, b: 0.52, a: 1}
+    rim: {r: 0.84, g: 0.5, b: 0.36, a: 1}
+    topper: 3
+  - name: Tomato
+    fromLevel: 3
+    shape: 2
+    size: 0.45
+    color: {r: 0.98, g: 0.5, b: 0.22, a: 1}
+    rim: {r: 0.55, g: 0.2, b: 0.08, a: 1}
+    topper: 3
+  - name: Ripe tomato
+    fromLevel: 6
+    shape: 2
+    size: 0.52
+    color: {r: 0.93, g: 0.2, b: 0.16, a: 1}
+    rim: {r: 0.5, g: 0.07, b: 0.05, a: 1}
+    topper: 3
+  xpGrab: 2
+  xpThrow: 3
+  xpSplat: 2
+  xpPop: 5
+  xpPetPerSecond: 2
+  xpWindowLanding: 1
+  xpWindowBonk: 2
+  xpSnack: 5
+  xpPerMinuteAwake: 1
+  baseXpPerLevel: 20
+  extraXpPerLevel: 15
+  preview: 0
+  previewGrowth: 0
+  levelUpClip: {fileID: 8300000, guid: c8d6aa803d7c60145bbad41e98bade53, type: 3}
+  stageUpClip: {fileID: 8300000, guid: cbd0616e61dfadc44a2d2f1eced1a77f, type: 3}
+  volume: 0.6
+  saveName: buddy_tomato
+--- !u!114 &1111721171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7afc3cd8eedf24c956158398993bbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CuteFace
+  scale: 0.6
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  sortingOrder: 16
+  eyeOffset: {x: 0.18, y: -0.05}
+  eyeSize: 0.24
+  pupilSize: 0.15
+  blushOffset: {x: 0.3, y: -0.16}
+  blushSize: {x: 0.14, y: 0.08}
+  mouthOffset: {x: 0, y: -0.19}
+  mouthWidth: 0.12
+  toothy: 0
+  pupilColor: {r: 0.17, g: 0.11, b: 0.07, a: 1}
+  blushColor: {r: 1, g: 0.55, b: 0.65, a: 0.55}
+  babyUntilLevel: 2
+  babyEyes: 0.32
+  blinkInterval: {x: 2, y: 5}
+  blinkTime: 0.14
+--- !u!114 &1111721172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31cdcc956fc3a394383a415628816377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyBody
+  size: 0.6
+  shape: 2
+  topper: 3
+  color: {r: 0.93, g: 0.2, b: 0.16, a: 1}
+  rimColor: {r: 0.5, g: 0.07, b: 0.05, a: 1}
+  leafColor: {r: 0.22, g: 0.55, b: 0.22, a: 1}
+  stemColor: {r: 0.25, g: 0.45, b: 0.18, a: 1}
+  monsterSeed: 0
+  shader: {fileID: 4800000, guid: b4c93f2557dbf974188b55d6de41bdfa, type: 3}
+  spriteMaterial: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  sortingOrder: 15
+  shadowAlpha: 0.28
+  shadowOffset: {x: 0.03, y: -0.04}
+  gloss: 0.9
+  particles: 24
+  stiffness: 0.06
+  edgeStiffness: 0.1
+  areaStiffness: 1
+  iterations: 6
+  gravity: 30
+  damping: 0.003
+  friction: 0.6
+  restitution: 0.15
+  bumpSpeed: 1
+  usePlatforms: 1
+  uprightSpeed: 3
+  hoverSwell: 0.06
+  heldSwell: 0.1
+  sticky: 1
+  stickSpeed: 2
+  holdTime: 0.6
+  holdPerSpeed: 0.1
+  maxHold: 3
+  slideSpeed: 0.35
+  tearLoad: 0.02
+  maxStretch: 2
+  glancing: 2
+  solidWindows: 1
+  collideBuddies: 1
+  impactWobble: 0.02
+  wobbleFrequency: 4
+  wobbleDamping: 0.3
+  crawlGrip: 70
+  crawlGravity: 0.3
+  grabRadius: 0.35
+  grabStiffness: 0.5
+  maxTaffy: 1.1
+--- !u!4 &1111721173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1111721174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edd12ff31ac4174c87f648a9b4e24aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHideSeek
+  hideFor: 60
+  peekEvery: {x: 7, y: 14}
+  hoverToFind: 0.6
+  xpFound: 5
+  suggestChance: 0.06
+--- !u!114 &1111721175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57b9808aef01494ba07d881a19ea158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyRope
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  color: {r: 0.3, g: 0.62, b: 0.25, a: 1}
+  width: 0.035
+  showCoil: 1
+  invitationTime: 1.2
+  lassoChance: 0.6
+  lassoCooldown: 30
+  maxRide: 40
+  shakeTurns: 3
+  shakeWindow: 0.8
+  shakeSpeed: 6
+  xpRide: 3
+  zipLoop: {fileID: 8300000, guid: 924e73158a2e08d40ac9b7aec43f0ccd, type: 3}
+  zipVolume: 0.4
+  zipThunk: {fileID: 8300000, guid: fa4469435901ee24aac2df55894ef837, type: 3}
+  zipSnap: {fileID: 8300000, guid: 652252108ce66b041a6a7beb60c8afc9, type: 3}
+--- !u!114 &1111721176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd336f575db56741ac25f0644c75992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySkills
+  ladder:
+  - skill: 0
+    level: 1
+    name: HOP
+  - skill: 1
+    level: 2
+    name: HOP DOWN
+  - skill: 2
+    level: 3
+    name: HOP UP
+  - skill: 3
+    level: 4
+    name: CLIMB
+  - skill: 4
+    level: 5
+    name: THINK AHEAD
+  - skill: 5
+    level: 6
+    name: LEAP
+  - skill: 6
+    level: 7
+    name: WALL JUMP
+  - skill: 7
+    level: 8
+    name: ROUTES
+  - skill: 8
+    level: 9
+    name: CATCH
+  - skill: 9
+    level: 10
+    name: ACE
+  - skill: 10
+    level: 10
+    name: LASSO
+  - skill: 11
+    level: 12
+    name: SWING
+  - skill: 12
+    level: 13
+    name: SKATEBOARD
+  - skill: 13
+    level: 14
+    name: PAPER PLANE
+  - skill: 14
+    level: 15
+    name: GRIND
+  - skill: 15
+    level: 16
+    name: ZIPLINE
+  - skill: 16
+    level: 17
+    name: BALLOON
+  - skill: 17
+    level: 10
+    name: GADGET
+  levelOverride: 0
+  kit: 0
+  ladderVersion: 2
+--- !u!114 &1111721177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd1539a638f172f42931d4cd893e4791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyCostume
+--- !u!114 &1111721178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac587d93f090d3444b71bb8db49e024b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySkate
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  rollLoop: {fileID: 8300000, guid: 4989356ab83395d44a382e9005139ffe, type: 3}
+  clackClip: {fileID: 8300000, guid: 1965fb02269798b43a0c74b375cf0ed3, type: 3}
+  grindLoop: {fileID: 8300000, guid: 1335540ed08af1f43b8a8014955a42ad, type: 3}
+  volume: 0.45
+  sparkColor: {r: 1, g: 0.82, b: 0.35, a: 1}
+--- !u!114 &1111721179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49bff27d55a8f5f49b8152d2422d4067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyPlane
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  foldClip: {fileID: 8300000, guid: 1764c93397974f347b048e7ee01ef413, type: 3}
+  windLoop: {fileID: 8300000, guid: a84a79e6654a99640bc1dafa7d65fc96, type: 3}
+  volume: 0.4
+--- !u!114 &1111721180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d196c2bf49f70d14c91d42549ea528a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyParty
+  fromLevel: 3
+  tune: {fileID: 8300000, guid: 8ee36433439a2cd4291497516ab6630a, type: 3}
+  volume: 0.5
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+--- !u!114 &1111721181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f73915345feabb542835ba6c34797186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyLaser
+  noticeRange: 10
+  pounceReach: 2.2
+  hurry: 1.7
+  xpCatch: 1
+  xpEvery: 10
+--- !u!114 &1111721182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3395d132a1a2b2458207218d39c3ea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyDodge
+  fromLevel: 3
+  swoopSpeed: 6
+  maxInARow: 3
+--- !u!114 &1111721183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf26dd4d333bde4981745bb7fe3c7e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyFetch
+  xpFetch: 4
+  giveUpAfter: 20
+--- !u!114 &1111721184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6911ac55449af6c48a0df390448d661f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyBalloon
+  color: {r: 0.99, g: 0.8, b: 0.25, a: 1}
+  stringColor: {r: 0.95, g: 0.95, b: 0.97, a: 1}
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  popAfter: 0.05
+  inflateClip: {fileID: 8300000, guid: 0df77b375103ace4f83097b49f40253a, type: 3}
+  popClip: {fileID: 8300000, guid: a43da7a0f4d200d48b0c49b91e68a4b9, type: 3}
+  volume: 0.5
+--- !u!114 &1111721185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030f264e8626ecd4fb0d477bfee19e00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyLayer
+--- !u!114 &1111721186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3778eeb21adaa6a44a50241979358428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyJetpack
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  works: 0.6
+  sputters: 0.25
+  rumbleLoop: {fileID: 8300000, guid: 91077228534b26e4c9211e9e55b6e7ef, type: 3}
+  sputterClip: {fileID: 8300000, guid: d407053735913db4082a204517a0c6d8, type: 3}
+  bangClip: {fileID: 8300000, guid: 2458ac2c4f8020745adcd60644e2448c, type: 3}
+  volume: 0.5
+--- !u!114 &1111721187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a04853ad658c64b953d51904b8fe97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySlide
+  slideChance: 0.5
+--- !u!114 &1111721188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa45eb002d0bc14eb02bee85bf2395a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyPit
+  cannonballChance: 0.4
+--- !u!114 &1111721189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2de22092afc44907e880f62b2a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHoops
+  gameChance: 0.35
+--- !u!114 &1111721190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70666ff9326bcaf43905f59dc2d65378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyRain
+  splashChance: 0.7
+  shakeClip: {fileID: 8300000, guid: 216ef4b82b8f2c14897ed57f1da4af53, type: 3}
+  volume: 0.5
+--- !u!114 &1111721191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 121c9fdd17561fb4c913f264ad28f297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyFusion
+  pressTime: 0.55
+  fearDistance: 2.4
+  squishClip: {fileID: 8300000, guid: f295bbf94fd729e4db24afc7ece43e8c, type: 3}
+  fuseClip: {fileID: 8300000, guid: 43da83e965f55f54186b49e20e102d1e, type: 3}
+  splitClip: {fileID: 8300000, guid: 9c57a13528c3fee46b8500b7a1e6526e, type: 3}
+  roarClip: {fileID: 8300000, guid: 5f3169075f570564a96d7ca6aff5bc1a, type: 3}
+  stompClip: {fileID: 8300000, guid: 901a823ea854d0143b0503468b89be61, type: 3}
+  volume: 0.7
+--- !u!114 &1111721192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111721162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10de3b5dd05034842bd7fecb0cb071d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyBand
+  marimba: {fileID: 8300000, guid: b68fbc8d9e29b2d48bf5e620e9f6270e, type: 3}
+  uke: {fileID: 8300000, guid: 793d2cfd3c3198a47944bfddf0dcb852, type: 3}
+  cup: {fileID: 8300000, guid: a3af8d8c02931f146aa05c5a8117059c, type: 3}
+  bongo: {fileID: 8300000, guid: dff8ec5e4bf469544b99a44223e80b73, type: 3}
+  bass: {fileID: 8300000, guid: b4c1e1ad4b008a440ade526226edabe6, type: 3}
+  quack: {fileID: 8300000, guid: b3c62dca99982f143837a75d9c5599c5, type: 3}
+  tuba: {fileID: 8300000, guid: e6a481f2b3899714cb35eb4cd6c410cf, type: 3}
+  maraca: {fileID: 8300000, guid: 49dcccf07e165cd4eb9d199e9d4d3bb9, type: 3}
+  kick: {fileID: 8300000, guid: bce8ef0211722714cab1480dd9dcbc7c, type: 3}
+  snare: {fileID: 8300000, guid: 2270d5e2981bcee44a8db4db13678eb8, type: 3}
+  hat: {fileID: 8300000, guid: 8c227d2df1d7ac540942a99961b1ac8c, type: 3}
+  windowNotes: 1
+  volume: 0.6
+  hopVolume: 0.13
+  stereoWidth: 0.6
+  jams: 1
+  jamVolume: 0.5
+  jamEveryMinutes: {x: 25, y: 50}
+  jamWhenIdle: 20
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+--- !u!1 &1207220443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1207220445}
+  - component: {fileID: 1207220444}
+  m_Layer: 0
+  m_Name: Whip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1207220444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207220443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d774945bd4d56c64195c920257b80138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Whip
+  cam: {fileID: 519420031}
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  swishClip: {fileID: 8300000, guid: 29adaf16fcd5c454987807861daebcc7, type: 3}
+  crackClip: {fileID: 8300000, guid: 5cb11a5118626c1468dd5afb99487d6c, type: 3}
+  size: 1
+  segments: 24
+  lashLength: 3.2
+  handleLength: 0.7
+  handleWidth: 0.13
+  lashStartWidth: 0.075
+  lashEndWidth: 0.012
+  handleColor: {r: 0.23, g: 0.14, b: 0.08, a: 1}
+  lashColor: {r: 0.45, g: 0.27, b: 0.13, a: 1}
+  popperColor: {r: 0.93, g: 0.87, b: 0.74, a: 1}
+  gravity: 12
+  damping: 0.004
+  iterations: 8
+  tipMass: 0.06
+  bendStiffness: 0.1
+  handleStiffness: 0.05
+  substepRate: 240
+  restAngle: 60
+  tiltPerSpeed: 2
+  maxTilt: 25
+  windupAngle: 40
+  strikeAngle: -80
+  windupOffset: {x: -0.6, y: 0.3}
+  strikeOffset: {x: 1, y: -0.1}
+  windupTime: 0.1
+  strikeTime: 0.08
+  recoverTime: 0.35
+  crackExtension: 0.88
+  crackOnFling: 1
+  flingCrackSpeed: 45
+  crackCooldown: 0.35
+  swishVolume: 0.8
+  crackVolume: 1
+  sparkCount: 14
+--- !u!4 &1207220445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207220443}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1465240004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1465240030}
+  - component: {fileID: 1465240029}
+  - component: {fileID: 1465240028}
+  - component: {fileID: 1465240027}
+  - component: {fileID: 1465240026}
+  - component: {fileID: 1465240025}
+  - component: {fileID: 1465240024}
+  - component: {fileID: 1465240023}
+  - component: {fileID: 1465240022}
+  - component: {fileID: 1465240021}
+  - component: {fileID: 1465240020}
+  - component: {fileID: 1465240019}
+  - component: {fileID: 1465240018}
+  - component: {fileID: 1465240017}
+  - component: {fileID: 1465240016}
+  - component: {fileID: 1465240015}
+  - component: {fileID: 1465240014}
+  - component: {fileID: 1465240013}
+  - component: {fileID: 1465240012}
+  - component: {fileID: 1465240011}
+  - component: {fileID: 1465240010}
+  - component: {fileID: 1465240009}
+  - component: {fileID: 1465240008}
+  - component: {fileID: 1465240007}
+  - component: {fileID: 1465240006}
+  - component: {fileID: 1465240005}
+  - component: {fileID: 1465240031}
+  - component: {fileID: 1465240032}
+  - component: {fileID: 1465240033}
+  m_Layer: 0
+  m_Name: Gummy Duck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1465240005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edd12ff31ac4174c87f648a9b4e24aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHideSeek
+  hideFor: 60
+  peekEvery: {x: 7, y: 14}
+  hoverToFind: 0.6
+  xpFound: 5
+  suggestChance: 0.06
+--- !u!114 &1465240006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 194da10702127b5449d6158643742e09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyDuck
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  mama: {fileID: 1055590710}
+  followChance: 0.85
+--- !u!114 &1465240007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51192ceed24c8e644a01ec945645efd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySocial
+  visitEvery: {x: 18, y: 40}
+  visitChance: 0.7
+  tagChance: 0.3
+  napTogether: 0.7
+  rivalry: 0.6
+  whisperDistance: 5
+  innocentDistance: 3
+--- !u!114 &1465240008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664cb5c0f8bb0de469ae274e4e14c2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyEater
+  noticeDistance: 14
+  wakeDistance: 5
+  giveUpAfter: 12
+  crunchClip: {fileID: 8300000, guid: cf1bb94f38b140c45a2ac545d71f10f3, type: 3}
+  volume: 0.6
+--- !u!114 &1465240009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a286da44c46fc344aa1b3c505f04482b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindowWobble
+  wobbleWindows: 1
+  landSpeed: 7
+  knockSpeed: 7
+  pushStrength: 0.5
+  knockStrength: 0.45
+  frequency: 5
+  damping: 0.18
+  maxOffset: 0.3
+  binBounce: 0.85
+  boingClip: {fileID: 8300000, guid: 521de2e62f3a82c4d8d2a481bb596771, type: 3}
+  volume: 0.5
+--- !u!114 &1465240010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85324decb366f9e4eadc2ce76bab4658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHud
+  showAfterGain: 2.5
+  pixelScale1080: 3
+  textColor: {r: 1, g: 0.97, b: 0.9, a: 1}
+  xpColor: {r: 1, g: 0.82, b: 0.25, a: 1}
+  xpShine: {r: 1, g: 0.95, b: 0.65, a: 1}
+  barTrack: {r: 0.25, g: 0.18, b: 0.13, a: 0.95}
+  barOutline: {r: 0.12, g: 0.08, b: 0.06, a: 0.9}
+--- !u!114 &1465240011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d196c2bf49f70d14c91d42549ea528a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyParty
+  fromLevel: 3
+  tune: {fileID: 8300000, guid: 8ee36433439a2cd4291497516ab6630a, type: 3}
+  volume: 0.5
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+--- !u!114 &1465240012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f73915345feabb542835ba6c34797186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyLaser
+  noticeRange: 10
+  pounceReach: 2.2
+  hurry: 1.7
+  xpCatch: 1
+  xpEvery: 10
+--- !u!114 &1465240013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030f264e8626ecd4fb0d477bfee19e00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyLayer
+--- !u!114 &1465240014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3395d132a1a2b2458207218d39c3ea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyDodge
+  fromLevel: 3
+  swoopSpeed: 6
+  maxInARow: 3
+--- !u!114 &1465240015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a04853ad658c64b953d51904b8fe97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySlide
+  slideChance: 0.5
+--- !u!114 &1465240016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa45eb002d0bc14eb02bee85bf2395a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyPit
+  cannonballChance: 0.4
+--- !u!114 &1465240017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2de22092afc44907e880f62b2a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHoops
+  gameChance: 0.35
+--- !u!114 &1465240018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf26dd4d333bde4981745bb7fe3c7e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyFetch
+  xpFetch: 4
+  giveUpAfter: 20
+--- !u!114 &1465240019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6911ac55449af6c48a0df390448d661f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyBalloon
+  color: {r: 0.98, g: 0.4, b: 0.45, a: 1}
+  stringColor: {r: 0.95, g: 0.95, b: 0.97, a: 1}
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  popAfter: 0.05
+  inflateClip: {fileID: 8300000, guid: 0df77b375103ace4f83097b49f40253a, type: 3}
+  popClip: {fileID: 8300000, guid: a43da7a0f4d200d48b0c49b91e68a4b9, type: 3}
+  volume: 0.5
+--- !u!114 &1465240020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49bff27d55a8f5f49b8152d2422d4067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyPlane
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  foldClip: {fileID: 8300000, guid: 1764c93397974f347b048e7ee01ef413, type: 3}
+  windLoop: {fileID: 8300000, guid: a84a79e6654a99640bc1dafa7d65fc96, type: 3}
+  volume: 0.4
+--- !u!114 &1465240021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac587d93f090d3444b71bb8db49e024b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySkate
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  rollLoop: {fileID: 8300000, guid: 4989356ab83395d44a382e9005139ffe, type: 3}
+  clackClip: {fileID: 8300000, guid: 1965fb02269798b43a0c74b375cf0ed3, type: 3}
+  grindLoop: {fileID: 8300000, guid: 1335540ed08af1f43b8a8014955a42ad, type: 3}
+  volume: 0.45
+  sparkColor: {r: 1, g: 0.82, b: 0.35, a: 1}
+--- !u!114 &1465240022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57b9808aef01494ba07d881a19ea158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyRope
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  color: {r: 0.98, g: 0.6, b: 0.15, a: 1}
+  width: 0.035
+  showCoil: 1
+  invitationTime: 1.2
+  lassoChance: 0.6
+  lassoCooldown: 30
+  maxRide: 40
+  shakeTurns: 3
+  shakeWindow: 0.8
+  shakeSpeed: 6
+  xpRide: 3
+  zipLoop: {fileID: 8300000, guid: 924e73158a2e08d40ac9b7aec43f0ccd, type: 3}
+  zipVolume: 0.4
+  zipThunk: {fileID: 8300000, guid: fa4469435901ee24aac2df55894ef837, type: 3}
+  zipSnap: {fileID: 8300000, guid: 652252108ce66b041a6a7beb60c8afc9, type: 3}
+--- !u!114 &1465240023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd336f575db56741ac25f0644c75992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySkills
+  ladder:
+  - skill: 0
+    level: 1
+    name: HOP
+  - skill: 1
+    level: 2
+    name: HOP DOWN
+  - skill: 2
+    level: 3
+    name: HOP UP
+  - skill: 3
+    level: 4
+    name: CLIMB
+  - skill: 4
+    level: 5
+    name: THINK AHEAD
+  - skill: 5
+    level: 6
+    name: LEAP
+  - skill: 6
+    level: 7
+    name: WALL JUMP
+  - skill: 7
+    level: 8
+    name: ROUTES
+  - skill: 8
+    level: 9
+    name: CATCH
+  - skill: 9
+    level: 10
+    name: ACE
+  - skill: 10
+    level: 10
+    name: LASSO
+  - skill: 17
+    level: 10
+    name: GADGET
+  - skill: 11
+    level: 12
+    name: SWING
+  - skill: 12
+    level: 13
+    name: SKATEBOARD
+  - skill: 13
+    level: 14
+    name: PAPER PLANE
+  - skill: 14
+    level: 15
+    name: GRIND
+  - skill: 15
+    level: 16
+    name: ZIPLINE
+  - skill: 16
+    level: 17
+    name: BALLOON
+  levelOverride: 0
+  kit: 0
+  ladderVersion: 2
+--- !u!114 &1465240024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da235b982768e424a8e3c63f8504fc8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyFx
+  splatClip: {fileID: 8300000, guid: 1981f65c406d5dc41a7536d258e28f92, type: 3}
+  bumpClip: {fileID: 8300000, guid: 5b1db27291fd188479cf630164a0c0f0, type: 3}
+  popClip: {fileID: 8300000, guid: 753600356d2c7f14e9044ed99feb1141, type: 3}
+  stretchLoop: {fileID: 8300000, guid: 65800f00bf782f544b1434cfae53bdcd, type: 3}
+  splatVolume: 0.7
+  bumpVolume: 0.35
+  grabVolume: 0.25
+  stretchVolume: 0.45
+  popVolume: 0.8
+  stereoWidth: 0.6
+  splatDroplets: 10
+  popDroplets: 14
+  spotFadeTime: 2.5
+  gooTint: {r: 0.85, g: 0.85, b: 0.85, a: 1}
+  trailFadeTime: 3
+  printFadeTime: 4
+--- !u!114 &1465240025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00667e3a35028fb41ab2a426b7adda86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySpeech
+  voice: 5
+  talk: 1
+  chattiness: 0.8
+  minGap: 2.5
+  chatterEvery: {x: 50, y: 110}
+  pixelScale1080: 3
+  blipClip: {fileID: 8300000, guid: 19e540de29e7dac47aaf398bfa53182b, type: 3}
+  volume: 0.25
+--- !u!114 &1465240026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1da3714357cf6345b58f3f66e7ae211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyBrain
+  climbChance: 0.2
+  peekChance: 0.25
+  edgeRange: 4
+  climbSpeed: 1.5
+  floatChance: 0.12
+  glideChance: 0.15
+  jetChance: 0.12
+  swingChance: 0.12
+  ropeClimbSpeed: 2.4
+  zipChance: 0.12
+  skateChance: 0.12
+  skateAccel: 9
+  skateBrake: 8
+  hopSpeed: 1.7
+  hopUp: 5.2
+  squashTime: 0.12
+  squashPose: {x: 1.15, y: 0.87}
+  launchPose: {x: 0.9, y: 1.11}
+  pauseBetweenHops: {x: 0.2, y: 0.45}
+  hopsPerWalk: {x: 2, y: 5}
+  idleTime: {x: 1, y: 3}
+  hopTowardsCursor: 0.4
+  stayOnWindow: 0.75
+  attentionDistance: 2
+  sleepAfter: 50
+  wakeDistance: 1.2
+  breathing: 0.03
+  zzzInterval: 1.3
+  zzzColor: {r: 0.36, g: 0.42, b: 0.75, a: 1}
+  dizzySpeed: 11
+  dizzyTime: 2.5
+  annoyedPokes: 3
+  annoyedWindow: 5
+  annoyedTime: 6
+  petSpeed: {x: 0.3, y: 5}
+  petTime: 0.8
+  happyTime: 3
+  heartColor: {r: 1, g: 0.42, b: 0.58, a: 1}
+  angerColor: {r: 0.9, g: 0.15, b: 0.15, a: 1}
+  leapHeight: 6
+  leapMargin: 0.9
+  leapReach: 3
+--- !u!114 &1465240027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e3a81e078dd9549a7eda758a5b8ab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyProgress
+  stages:
+  - name: Duckling
+    fromLevel: 1
+    shape: 6
+    size: 0.34
+    color: {r: 1, g: 0.92, b: 0.45, a: 1}
+    rim: {r: 0.9, g: 0.7, b: 0.2, a: 1}
+    topper: 2
+  - name: Little duck
+    fromLevel: 3
+    shape: 6
+    size: 0.42
+    color: {r: 1, g: 0.89, b: 0.38, a: 1}
+    rim: {r: 0.88, g: 0.65, b: 0.15, a: 1}
+    topper: 2
+  - name: Duck
+    fromLevel: 6
+    shape: 6
+    size: 0.5
+    color: {r: 1, g: 0.86, b: 0.3, a: 1}
+    rim: {r: 0.85, g: 0.6, b: 0.1, a: 1}
+    topper: 2
+  - name: Big duck
+    fromLevel: 10
+    shape: 6
+    size: 0.56
+    color: {r: 0.99, g: 0.82, b: 0.24, a: 1}
+    rim: {r: 0.8, g: 0.55, b: 0.08, a: 1}
+    topper: 2
+  xpGrab: 2
+  xpThrow: 3
+  xpSplat: 2
+  xpPop: 5
+  xpPetPerSecond: 2
+  xpWindowLanding: 1
+  xpWindowBonk: 2
+  xpSnack: 5
+  xpPerMinuteAwake: 1
+  baseXpPerLevel: 20
+  extraXpPerLevel: 15
+  preview: 0
+  previewGrowth: 0
+  levelUpClip: {fileID: 8300000, guid: c8d6aa803d7c60145bbad41e98bade53, type: 3}
+  stageUpClip: {fileID: 8300000, guid: cbd0616e61dfadc44a2d2f1eced1a77f, type: 3}
+  volume: 0.6
+  saveName: buddy_duck
+--- !u!114 &1465240028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7afc3cd8eedf24c956158398993bbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CuteFace
+  scale: 0.5
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  sortingOrder: 56
+  eyeOffset: {x: 0.15, y: 0.08}
+  eyeSize: 0.26
+  pupilSize: 0.17
+  blushOffset: {x: 0.3, y: -0.06}
+  blushSize: {x: 0.14, y: 0.08}
+  mouthOffset: {x: 0, y: -0.14}
+  mouthWidth: 0.1
+  toothy: 0
+  pupilColor: {r: 0.1, g: 0.07, b: 0.04, a: 1}
+  blushColor: {r: 1, g: 0.55, b: 0.65, a: 0.55}
+  babyUntilLevel: 2
+  babyEyes: 0.32
+  blinkInterval: {x: 2, y: 5}
+  blinkTime: 0.14
+--- !u!114 &1465240029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31cdcc956fc3a394383a415628816377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyBody
+  size: 0.5
+  shape: 6
+  topper: 2
+  color: {r: 1, g: 0.86, b: 0.3, a: 1}
+  rimColor: {r: 0.85, g: 0.6, b: 0.1, a: 1}
+  leafColor: {r: 0.26, g: 0.63, b: 0.28, a: 1}
+  stemColor: {r: 0.43, g: 0.3, b: 0.25, a: 1}
+  monsterSeed: 0
+  shader: {fileID: 4800000, guid: b4c93f2557dbf974188b55d6de41bdfa, type: 3}
+  spriteMaterial: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  sortingOrder: 55
+  shadowAlpha: 0.28
+  shadowOffset: {x: 0.03, y: -0.04}
+  gloss: 0.9
+  particles: 24
+  stiffness: 0.06
+  edgeStiffness: 0.1
+  areaStiffness: 1
+  iterations: 6
+  gravity: 30
+  damping: 0.003
+  friction: 0.6
+  restitution: 0.15
+  bumpSpeed: 1
+  usePlatforms: 1
+  uprightSpeed: 9
+  hoverSwell: 0.06
+  heldSwell: 0.1
+  sticky: 1
+  stickSpeed: 2
+  holdTime: 0.6
+  holdPerSpeed: 0.1
+  maxHold: 3
+  slideSpeed: 0.35
+  tearLoad: 0.02
+  maxStretch: 2
+  glancing: 2
+  solidWindows: 1
+  collideBuddies: 1
+  impactWobble: 0.02
+  wobbleFrequency: 4
+  wobbleDamping: 0.3
+  crawlGrip: 70
+  crawlGravity: 0.3
+  grabRadius: 0.35
+  grabStiffness: 0.5
+  maxTaffy: 1.1
+--- !u!4 &1465240030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1465240031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70666ff9326bcaf43905f59dc2d65378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyRain
+  splashChance: 0.7
+  shakeClip: {fileID: 8300000, guid: 216ef4b82b8f2c14897ed57f1da4af53, type: 3}
+  volume: 0.5
+--- !u!114 &1465240032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 121c9fdd17561fb4c913f264ad28f297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyFusion
+  pressTime: 0.55
+  fearDistance: 2.4
+  squishClip: {fileID: 8300000, guid: f295bbf94fd729e4db24afc7ece43e8c, type: 3}
+  fuseClip: {fileID: 8300000, guid: 43da83e965f55f54186b49e20e102d1e, type: 3}
+  splitClip: {fileID: 8300000, guid: 9c57a13528c3fee46b8500b7a1e6526e, type: 3}
+  roarClip: {fileID: 8300000, guid: 5f3169075f570564a96d7ca6aff5bc1a, type: 3}
+  stompClip: {fileID: 8300000, guid: 901a823ea854d0143b0503468b89be61, type: 3}
+  volume: 0.7
+--- !u!114 &1465240033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465240004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10de3b5dd05034842bd7fecb0cb071d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyBand
+  marimba: {fileID: 8300000, guid: b68fbc8d9e29b2d48bf5e620e9f6270e, type: 3}
+  uke: {fileID: 8300000, guid: 793d2cfd3c3198a47944bfddf0dcb852, type: 3}
+  cup: {fileID: 8300000, guid: a3af8d8c02931f146aa05c5a8117059c, type: 3}
+  bongo: {fileID: 8300000, guid: dff8ec5e4bf469544b99a44223e80b73, type: 3}
+  bass: {fileID: 8300000, guid: b4c1e1ad4b008a440ade526226edabe6, type: 3}
+  quack: {fileID: 8300000, guid: b3c62dca99982f143837a75d9c5599c5, type: 3}
+  tuba: {fileID: 8300000, guid: e6a481f2b3899714cb35eb4cd6c410cf, type: 3}
+  maraca: {fileID: 8300000, guid: 49dcccf07e165cd4eb9d199e9d4d3bb9, type: 3}
+  kick: {fileID: 8300000, guid: bce8ef0211722714cab1480dd9dcbc7c, type: 3}
+  snare: {fileID: 8300000, guid: 2270d5e2981bcee44a8db4db13678eb8, type: 3}
+  hat: {fileID: 8300000, guid: 8c227d2df1d7ac540942a99961b1ac8c, type: 3}
+  windowNotes: 1
+  volume: 0.6
+  hopVolume: 0.13
+  stereoWidth: 0.6
+  jams: 1
+  jamVolume: 0.5
+  jamEveryMinutes: {x: 25, y: 50}
+  jamWhenIdle: 20
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+--- !u!1 &2119365877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2119365890}
+  - component: {fileID: 2119365889}
+  - component: {fileID: 2119365888}
+  - component: {fileID: 2119365887}
+  - component: {fileID: 2119365886}
+  - component: {fileID: 2119365885}
+  - component: {fileID: 2119365884}
+  - component: {fileID: 2119365883}
+  - component: {fileID: 2119365882}
+  - component: {fileID: 2119365881}
+  - component: {fileID: 2119365880}
+  - component: {fileID: 2119365879}
+  - component: {fileID: 2119365878}
+  - component: {fileID: 2119365892}
+  - component: {fileID: 2119365891}
+  - component: {fileID: 2119365894}
+  - component: {fileID: 2119365893}
+  - component: {fileID: 2119365895}
+  - component: {fileID: 2119365900}
+  - component: {fileID: 2119365899}
+  - component: {fileID: 2119365898}
+  - component: {fileID: 2119365897}
+  - component: {fileID: 2119365896}
+  - component: {fileID: 2119365901}
+  - component: {fileID: 2119365902}
+  - component: {fileID: 2119365905}
+  - component: {fileID: 2119365904}
+  - component: {fileID: 2119365903}
+  - component: {fileID: 2119365906}
+  - component: {fileID: 2119365907}
+  - component: {fileID: 2119365908}
+  m_Layer: 0
+  m_Name: Gummy Coffee Bean
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &2119365878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edd12ff31ac4174c87f648a9b4e24aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHideSeek
+  hideFor: 60
+  peekEvery: {x: 7, y: 14}
+  hoverToFind: 0.6
+  xpFound: 5
+  suggestChance: 0.06
+--- !u!114 &2119365879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff775a3730d1af479a4364a419e6e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BeanSteam
+  steamAfter: 60
+  moreAfter: 90
+  mostAfter: 120
+  steamColor: {r: 1, g: 1, b: 1, a: 0.55}
+--- !u!114 &2119365880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51192ceed24c8e644a01ec945645efd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySocial
+  visitEvery: {x: 18, y: 40}
+  visitChance: 0.7
+  tagChance: 0.3
+  napTogether: 0.7
+  rivalry: 0.6
+  whisperDistance: 5
+  innocentDistance: 3
+--- !u!114 &2119365881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664cb5c0f8bb0de469ae274e4e14c2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyEater
+  noticeDistance: 14
+  wakeDistance: 5
+  giveUpAfter: 12
+  crunchClip: {fileID: 8300000, guid: cf1bb94f38b140c45a2ac545d71f10f3, type: 3}
+  volume: 0.6
+--- !u!114 &2119365882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a286da44c46fc344aa1b3c505f04482b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindowWobble
+  wobbleWindows: 1
+  landSpeed: 7
+  knockSpeed: 7
+  pushStrength: 0.5
+  knockStrength: 0.45
+  frequency: 5
+  damping: 0.18
+  maxOffset: 0.3
+  binBounce: 0.85
+  boingClip: {fileID: 8300000, guid: 521de2e62f3a82c4d8d2a481bb596771, type: 3}
+  volume: 0.5
+--- !u!114 &2119365883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85324decb366f9e4eadc2ce76bab4658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHud
+  showAfterGain: 2.5
+  pixelScale1080: 3
+  textColor: {r: 1, g: 0.97, b: 0.9, a: 1}
+  xpColor: {r: 1, g: 0.82, b: 0.25, a: 1}
+  xpShine: {r: 1, g: 0.95, b: 0.65, a: 1}
+  barTrack: {r: 0.25, g: 0.18, b: 0.13, a: 0.95}
+  barOutline: {r: 0.12, g: 0.08, b: 0.06, a: 0.9}
+--- !u!114 &2119365884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da235b982768e424a8e3c63f8504fc8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyFx
+  splatClip: {fileID: 8300000, guid: 1981f65c406d5dc41a7536d258e28f92, type: 3}
+  bumpClip: {fileID: 8300000, guid: 5b1db27291fd188479cf630164a0c0f0, type: 3}
+  popClip: {fileID: 8300000, guid: 753600356d2c7f14e9044ed99feb1141, type: 3}
+  stretchLoop: {fileID: 8300000, guid: 65800f00bf782f544b1434cfae53bdcd, type: 3}
+  splatVolume: 0.7
+  bumpVolume: 0.35
+  grabVolume: 0.25
+  stretchVolume: 0.45
+  popVolume: 0.8
+  stereoWidth: 0.6
+  splatDroplets: 10
+  popDroplets: 14
+  spotFadeTime: 2.5
+  gooTint: {r: 0.85, g: 0.85, b: 0.85, a: 1}
+  trailFadeTime: 3
+  printFadeTime: 4
+--- !u!114 &2119365885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00667e3a35028fb41ab2a426b7adda86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySpeech
+  voice: 2
+  talk: 1
+  chattiness: 0.8
+  minGap: 2.5
+  chatterEvery: {x: 50, y: 110}
+  pixelScale1080: 3
+  blipClip: {fileID: 8300000, guid: 19e540de29e7dac47aaf398bfa53182b, type: 3}
+  volume: 0.25
+--- !u!114 &2119365886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1da3714357cf6345b58f3f66e7ae211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyBrain
+  climbChance: 0.3
+  peekChance: 0.25
+  edgeRange: 4
+  climbSpeed: 1.5
+  floatChance: 0.12
+  glideChance: 0.15
+  jetChance: 0.12
+  swingChance: 0.12
+  ropeClimbSpeed: 2.4
+  zipChance: 0.12
+  skateChance: 0.12
+  skateAccel: 9
+  skateBrake: 8
+  hopSpeed: 2.1
+  hopUp: 5.5
+  squashTime: 0.12
+  squashPose: {x: 1.15, y: 0.87}
+  launchPose: {x: 0.9, y: 1.11}
+  pauseBetweenHops: {x: 0.2, y: 0.45}
+  hopsPerWalk: {x: 2, y: 5}
+  idleTime: {x: 0.8, y: 2.5}
+  hopTowardsCursor: 0.55
+  stayOnWindow: 0.75
+  attentionDistance: 2
+  sleepAfter: 120
+  wakeDistance: 1.2
+  breathing: 0.03
+  zzzInterval: 1.3
+  zzzColor: {r: 0.36, g: 0.42, b: 0.75, a: 1}
+  dizzySpeed: 11
+  dizzyTime: 2.5
+  annoyedPokes: 3
+  annoyedWindow: 5
+  annoyedTime: 6
+  petSpeed: {x: 0.3, y: 5}
+  petTime: 0.8
+  happyTime: 3
+  heartColor: {r: 1, g: 0.42, b: 0.58, a: 1}
+  angerColor: {r: 0.9, g: 0.15, b: 0.15, a: 1}
+  leapHeight: 6
+  leapMargin: 0.9
+  leapReach: 3
+--- !u!114 &2119365887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e3a81e078dd9549a7eda758a5b8ab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyProgress
+  stages:
+  - name: Green bean
+    fromLevel: 1
+    shape: 3
+    size: 0.34
+    color: {r: 0.6, g: 0.66, b: 0.47, a: 1}
+    rim: {r: 0.3, g: 0.36, b: 0.22, a: 1}
+    topper: 4
+  - name: Light roast
+    fromLevel: 3
+    shape: 3
+    size: 0.4
+    color: {r: 0.82, g: 0.62, b: 0.4, a: 1}
+    rim: {r: 0.46, g: 0.29, b: 0.15, a: 1}
+    topper: 4
+  - name: Medium roast
+    fromLevel: 6
+    shape: 3
+    size: 0.46
+    color: {r: 0.62, g: 0.39, b: 0.21, a: 1}
+    rim: {r: 0.32, g: 0.17, b: 0.08, a: 1}
+    topper: 4
+  - name: Dark roast
+    fromLevel: 10
+    shape: 3
+    size: 0.5
+    color: {r: 0.5, g: 0.31, b: 0.17, a: 1}
+    rim: {r: 0.24, g: 0.12, b: 0.05, a: 1}
+    topper: 4
+  xpGrab: 2
+  xpThrow: 3
+  xpSplat: 2
+  xpPop: 5
+  xpPetPerSecond: 2
+  xpWindowLanding: 1
+  xpWindowBonk: 2
+  xpSnack: 5
+  xpPerMinuteAwake: 1
+  baseXpPerLevel: 20
+  extraXpPerLevel: 15
+  preview: 0
+  previewGrowth: 0
+  levelUpClip: {fileID: 8300000, guid: c8d6aa803d7c60145bbad41e98bade53, type: 3}
+  stageUpClip: {fileID: 8300000, guid: cbd0616e61dfadc44a2d2f1eced1a77f, type: 3}
+  volume: 0.6
+  saveName: buddy_bean
+--- !u!114 &2119365888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7afc3cd8eedf24c956158398993bbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CuteFace
+  scale: 0.5
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  sortingOrder: 26
+  eyeOffset: {x: 0.15, y: -0.08}
+  eyeSize: 0.22
+  pupilSize: 0.15
+  blushOffset: {x: 0.27, y: -0.2}
+  blushSize: {x: 0.14, y: 0.08}
+  mouthOffset: {x: 0, y: -0.24}
+  mouthWidth: 0.12
+  toothy: 0
+  pupilColor: {r: 0.06, g: 0.03, b: 0.02, a: 1}
+  blushColor: {r: 1, g: 0.55, b: 0.65, a: 0.55}
+  babyUntilLevel: 2
+  babyEyes: 0.32
+  blinkInterval: {x: 2, y: 5}
+  blinkTime: 0.14
+--- !u!114 &2119365889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31cdcc956fc3a394383a415628816377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GummyBody
+  size: 0.5
+  shape: 3
+  topper: 4
+  color: {r: 0.5, g: 0.31, b: 0.17, a: 1}
+  rimColor: {r: 0.24, g: 0.12, b: 0.05, a: 1}
+  leafColor: {r: 0.26, g: 0.63, b: 0.28, a: 1}
+  stemColor: {r: 0.43, g: 0.3, b: 0.25, a: 1}
+  monsterSeed: 0
+  shader: {fileID: 4800000, guid: b4c93f2557dbf974188b55d6de41bdfa, type: 3}
+  spriteMaterial: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  sortingOrder: 25
+  shadowAlpha: 0.28
+  shadowOffset: {x: 0.03, y: -0.04}
+  gloss: 0.9
+  particles: 24
+  stiffness: 0.06
+  edgeStiffness: 0.1
+  areaStiffness: 1
+  iterations: 6
+  gravity: 30
+  damping: 0.003
+  friction: 0.6
+  restitution: 0.15
+  bumpSpeed: 1
+  usePlatforms: 1
+  uprightSpeed: 10
+  hoverSwell: 0.06
+  heldSwell: 0.1
+  sticky: 1
+  stickSpeed: 2
+  holdTime: 0.6
+  holdPerSpeed: 0.1
+  maxHold: 3
+  slideSpeed: 0.35
+  tearLoad: 0.02
+  maxStretch: 2
+  glancing: 2
+  solidWindows: 1
+  collideBuddies: 1
+  impactWobble: 0.02
+  wobbleFrequency: 4
+  wobbleDamping: 0.3
+  crawlGrip: 70
+  crawlGravity: 0.3
+  grabRadius: 0.35
+  grabStiffness: 0.5
+  maxTaffy: 1.1
+--- !u!4 &2119365890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.5, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2119365891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57b9808aef01494ba07d881a19ea158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyRope
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  color: {r: 0.86, g: 0.66, b: 0.4, a: 1}
+  width: 0.035
+  showCoil: 1
+  invitationTime: 1.2
+  lassoChance: 0.6
+  lassoCooldown: 30
+  maxRide: 40
+  shakeTurns: 3
+  shakeWindow: 0.8
+  shakeSpeed: 6
+  xpRide: 3
+  zipLoop: {fileID: 8300000, guid: 924e73158a2e08d40ac9b7aec43f0ccd, type: 3}
+  zipVolume: 0.4
+  zipThunk: {fileID: 8300000, guid: fa4469435901ee24aac2df55894ef837, type: 3}
+  zipSnap: {fileID: 8300000, guid: 652252108ce66b041a6a7beb60c8afc9, type: 3}
+--- !u!114 &2119365892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd336f575db56741ac25f0644c75992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySkills
+  ladder:
+  - skill: 0
+    level: 1
+    name: HOP
+  - skill: 1
+    level: 2
+    name: HOP DOWN
+  - skill: 2
+    level: 3
+    name: HOP UP
+  - skill: 3
+    level: 4
+    name: CLIMB
+  - skill: 4
+    level: 5
+    name: THINK AHEAD
+  - skill: 5
+    level: 6
+    name: LEAP
+  - skill: 6
+    level: 7
+    name: WALL JUMP
+  - skill: 7
+    level: 8
+    name: ROUTES
+  - skill: 8
+    level: 9
+    name: CATCH
+  - skill: 9
+    level: 10
+    name: ACE
+  - skill: 10
+    level: 10
+    name: LASSO
+  - skill: 11
+    level: 12
+    name: SWING
+  - skill: 12
+    level: 13
+    name: SKATEBOARD
+  - skill: 13
+    level: 14
+    name: PAPER PLANE
+  - skill: 14
+    level: 15
+    name: GRIND
+  - skill: 15
+    level: 16
+    name: ZIPLINE
+  - skill: 16
+    level: 17
+    name: BALLOON
+  - skill: 17
+    level: 10
+    name: GADGET
+  levelOverride: 0
+  kit: 0
+  ladderVersion: 2
+--- !u!114 &2119365893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd1539a638f172f42931d4cd893e4791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyCostume
+--- !u!114 &2119365894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac587d93f090d3444b71bb8db49e024b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySkate
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  rollLoop: {fileID: 8300000, guid: 4989356ab83395d44a382e9005139ffe, type: 3}
+  clackClip: {fileID: 8300000, guid: 1965fb02269798b43a0c74b375cf0ed3, type: 3}
+  grindLoop: {fileID: 8300000, guid: 1335540ed08af1f43b8a8014955a42ad, type: 3}
+  volume: 0.45
+  sparkColor: {r: 1, g: 0.82, b: 0.35, a: 1}
+--- !u!114 &2119365895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49bff27d55a8f5f49b8152d2422d4067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyPlane
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  foldClip: {fileID: 8300000, guid: 1764c93397974f347b048e7ee01ef413, type: 3}
+  windLoop: {fileID: 8300000, guid: a84a79e6654a99640bc1dafa7d65fc96, type: 3}
+  volume: 0.4
+--- !u!114 &2119365896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d196c2bf49f70d14c91d42549ea528a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyParty
+  fromLevel: 3
+  tune: {fileID: 8300000, guid: 8ee36433439a2cd4291497516ab6630a, type: 3}
+  volume: 0.5
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+--- !u!114 &2119365897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f73915345feabb542835ba6c34797186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyLaser
+  noticeRange: 10
+  pounceReach: 2.2
+  hurry: 1.7
+  xpCatch: 1
+  xpEvery: 10
+--- !u!114 &2119365898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3395d132a1a2b2458207218d39c3ea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyDodge
+  fromLevel: 3
+  swoopSpeed: 6
+  maxInARow: 3
+--- !u!114 &2119365899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf26dd4d333bde4981745bb7fe3c7e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyFetch
+  xpFetch: 4
+  giveUpAfter: 20
+--- !u!114 &2119365900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6911ac55449af6c48a0df390448d661f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyBalloon
+  color: {r: 0.98, g: 0.5, b: 0.68, a: 1}
+  stringColor: {r: 0.95, g: 0.95, b: 0.97, a: 1}
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  popAfter: 0.05
+  inflateClip: {fileID: 8300000, guid: 0df77b375103ace4f83097b49f40253a, type: 3}
+  popClip: {fileID: 8300000, guid: a43da7a0f4d200d48b0c49b91e68a4b9, type: 3}
+  volume: 0.5
+--- !u!114 &2119365901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030f264e8626ecd4fb0d477bfee19e00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyLayer
+--- !u!114 &2119365902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b3044e62de38c45acc9ea55d3d7b99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyEspresso
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+  buzzFor: 5
+  crashFor: 2.2
+  cooldown: 30
+  hurry: 2.1
+  farSnack: 4.5
+  funPerMinute: 0.25
+  gulpClip: {fileID: 8300000, guid: 9faa62d1f843c844f8617122f9476aca, type: 3}
+  volume: 0.55
+--- !u!114 &2119365903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a04853ad658c64b953d51904b8fe97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddySlide
+  slideChance: 0.5
+--- !u!114 &2119365904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa45eb002d0bc14eb02bee85bf2395a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyPit
+  cannonballChance: 0.4
+--- !u!114 &2119365905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2de22092afc44907e880f62b2a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyHoops
+  gameChance: 0.35
+--- !u!114 &2119365906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70666ff9326bcaf43905f59dc2d65378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyRain
+  splashChance: 0.7
+  shakeClip: {fileID: 8300000, guid: 216ef4b82b8f2c14897ed57f1da4af53, type: 3}
+  volume: 0.5
+--- !u!114 &2119365907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 121c9fdd17561fb4c913f264ad28f297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyFusion
+  pressTime: 0.55
+  fearDistance: 2.4
+  squishClip: {fileID: 8300000, guid: f295bbf94fd729e4db24afc7ece43e8c, type: 3}
+  fuseClip: {fileID: 8300000, guid: 43da83e965f55f54186b49e20e102d1e, type: 3}
+  splitClip: {fileID: 8300000, guid: 9c57a13528c3fee46b8500b7a1e6526e, type: 3}
+  roarClip: {fileID: 8300000, guid: 5f3169075f570564a96d7ca6aff5bc1a, type: 3}
+  stompClip: {fileID: 8300000, guid: 901a823ea854d0143b0503468b89be61, type: 3}
+  volume: 0.7
+--- !u!114 &2119365908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119365877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10de3b5dd05034842bd7fecb0cb071d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuddyBand
+  marimba: {fileID: 8300000, guid: b68fbc8d9e29b2d48bf5e620e9f6270e, type: 3}
+  uke: {fileID: 8300000, guid: 793d2cfd3c3198a47944bfddf0dcb852, type: 3}
+  cup: {fileID: 8300000, guid: a3af8d8c02931f146aa05c5a8117059c, type: 3}
+  bongo: {fileID: 8300000, guid: dff8ec5e4bf469544b99a44223e80b73, type: 3}
+  bass: {fileID: 8300000, guid: b4c1e1ad4b008a440ade526226edabe6, type: 3}
+  quack: {fileID: 8300000, guid: b3c62dca99982f143837a75d9c5599c5, type: 3}
+  tuba: {fileID: 8300000, guid: e6a481f2b3899714cb35eb4cd6c410cf, type: 3}
+  maraca: {fileID: 8300000, guid: 49dcccf07e165cd4eb9d199e9d4d3bb9, type: 3}
+  kick: {fileID: 8300000, guid: bce8ef0211722714cab1480dd9dcbc7c, type: 3}
+  snare: {fileID: 8300000, guid: 2270d5e2981bcee44a8db4db13678eb8, type: 3}
+  hat: {fileID: 8300000, guid: 8c227d2df1d7ac540942a99961b1ac8c, type: 3}
+  windowNotes: 1
+  volume: 0.6
+  hopVolume: 0.13
+  stereoWidth: 0.6
+  jams: 1
+  jamVolume: 0.5
+  jamEveryMinutes: {x: 25, y: 50}
+  jamWhenIdle: 20
+  material: {fileID: 2100000, guid: 491564c7113171b469851d38c6e5fcb4, type: 2}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 519420032}
+  - {fileID: 619394802}
+  - {fileID: 1207220445}
+  - {fileID: 735561479}
+  - {fileID: 954272446}
+  - {fileID: 1055590711}
+  - {fileID: 1111721173}
+  - {fileID: 2119365890}
+  - {fileID: 941781475}
+  - {fileID: 866409340}
+  - {fileID: 1465240030}
