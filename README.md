@@ -242,3 +242,6 @@ WhipIt keeps everything on your PC. It only reads what it needs:
 - **Windows:** their positions and sizes. Never their contents.
 - **Desktop icons:** their positions only. Never their names or files, and they're never moved.
 - **Your cursor:** read, never moved. Windows are only nudged and always spring back exactly; maximized windows are never touched.
+
+<img width="3828" height="2080" alt="image" src="https://github.com/user-attachments/assets/23885aa5-49cb-4844-8b02-9a637e8761de" />
+
